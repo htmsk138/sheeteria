@@ -1,0 +1,76 @@
+---
+layout: layouts/main
+tags:
+  - sheet
+pagination:
+  data: sheeteria
+  size: 1
+  addAllPagesToCollections: true
+  alias: sheet
+permalink: "/sheet/{{ sheet.id | replace('-', '/') }}/index.html"
+eleventyComputed:
+  title: "{{ sheet.title | safe }} ({{ sheet.artist | safe }}) - {{ sheet.style | safe }}"
+  description: "{{ sheet.style | safe }} sheet music for {{ sheet.artist | safe }}'s {{ sheet.title | safe }}"
+---
+<article class="sheet-detail">
+  <h1>{{ sheet.title }}</h1>
+  {%- if (sheet.yt_id) -%}
+  <p>
+    <iframe width="442" height="250" src="https://www.youtube.com/embed/{{ sheet.yt_id }}" title="{{ sheet.title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </p>
+  {%- endif -%}
+  <table>
+    <tbody>
+      <tr>
+        <th>
+          Artist
+        </th>
+        <td>
+          {{ sheet.artist }}
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Style
+        </th>
+        <td>
+          {{ sheet.style }}
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Publish
+        </th>
+        <td>
+          {{ sheet.published_on }}
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Key
+        </th>
+        <td>
+          {{ sheet.key }} (original: {{ sheet.org_key }})
+        </td>
+      </tr>
+      {%- if sheet.comment -%}
+      <tr>
+        <th>
+          Arranger's comment
+        </th>
+        <td>
+          {{ sheet.comment }}
+        </td>
+      </tr>
+      {%- endif -%}
+    </tbody>
+  </table>
+  <p>
+    <a class="btn" href="https://www.sheetmusicplus.com/title/{{ sheet.smp_id }}" target="_blank" rel="noreferrer">Buy sheet music</a>
+  </p>
+</article>
+
+<p>
+  <a href="{{ '../' | url }}">&laquo; See other versions for the song</a><br>
+  <a href="{{ '/' | url }}">&laquo; Back to sheet list</a>
+</p>

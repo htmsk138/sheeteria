@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+html {
+  background: url(../img/lightpaperfibers.png);
+  font-size: 62.5%;
+}
+
+body {
+	color: #404040;
+	font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 40em;
+  word-break: normal;
+}
+
+iframe,
+img {
+	max-width: 100%;
+}
+
+a,
+a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:active,
+a:focus {
+  outline: 1px dotted;
+  outline-offset: .1em;
+}
+
+a:hover {
+  outline: none;
+  text-decoration: underline;
+}
+
+i[class^="icon"] {
+  font-size: 150%;
+}
+
+hr {
+  border-top: none;
+  border-bottom: 1px dashed rgba(0,0,0,.3);
+}
+
+header {
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+footer {
+  font-size: 12px;
+  font-size: 1.2rem;
+  opacity: .7;
+  text-align: center;
+}
+
+main {
+  padding: 3em 0;
+}
+
+h1 {
+  font-size: 32px;
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.site-title {
+  margin-bottom: 0;
+}
+
+.site-description {
+  line-height: 1.2;
+  margin: 0 0 2em;
+  opacity: .7;
+  text-align: center;
+}
+
+nav ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  padding: .2em .8em;
+}
+
+li {
+	margin: 0 0 .5em;
+}
+
+input[type=text] {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: block;
+  font-size: inherit;
+  padding: .5em .8em;
+  margin: 0 auto 3em;
+  max-width: 90vw;
+  width: 20em;
+}
+
+.btn {
+  background: #fff;
+  border: 1px solid #404040;
+  color: #404040;
+  display: inline-block;
+  font-size: 120%;
+  font-weight: bold;
+  max-width: 80%;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  width: 13em;
+}
+
+.btn:active,
+.btn:focus,
+.btn:hover {
+  background: #404040;
+  color: #fff;
+  opacity: 1;
+  text-decoration: none;
+}
+
+article {
+  margin: 0 0 5em;
+}
+
+article p {
+  margin: 2em 0;
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
+}
+
+th,
+td {
+  padding: 0 1em .5em 0;
+  text-align: right;
+  vertical-align: top;
+}
+
+td {
+  text-align: left;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

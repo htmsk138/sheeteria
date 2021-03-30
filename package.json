@@ -1,0 +1,23 @@
+{
+  "name": "sheeteria-eleventy",
+  "version": "1.0.0",
+  "description": "Sheeteria official website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "gulp dev && cross-env ELEVENTY_ENV=development eleventy --serve",
+    "build": "gulp prod && cross-env ELEVENTY_ENV=production eleventy"
+  },
+  "author": "Hitomi Seki",
+  "license": "NO LICENSE",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "cross-env": "^7.0.3",
+    "del": "^2.2.2",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-terser": "^2.0.1",
+    "html-minifier": "^4.0.0"
+  }
+}

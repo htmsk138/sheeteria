@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{ title }} | {{ metadata.title }}</title>
+    <meta name="description" content="{{ description or metadata.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {%- if 'production' === app.env -%}
+    <link rel="stylesheet" href="{{ '/assets/css/main.min.css' | url}}">
+    <link rel="stylesheet" href="{{ '/assets/css/sheeteria_icons.min.css' | url}}">
+    {%- else -%}
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | url}}">
+    <link rel="stylesheet" href="{{ '/assets/css/sheeteria_icons.css' | url}}">
+    {%- endif -%}
+  </head>
+  <body>
+    <header>
+      <p class="site-title">
+        <a href="{{ '/' | url }}">
+          <img src="{{ '/assets/img/logo.png' | url }}" srcset="{{ '/assets/img/logo@2x.png' | url }} 2x" alt="Sheeteria">
+        </a>
+      </p>
+      <p class="site-description">
+        {{ metadata.description }}
+      </p>
+      <nav>
+        <ul>
+          <li>
+            <a href="{{ '/' | url }}">Sheet Music</a>
+          </li>
+          <li>
+            <a href="{{ '/about' | url }}">About</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCu_Dz2SPTeCunIDD_sOYcSw" target="_blank" rel="noreferrer"><i class="icon-youtube"><span class="sr-only">YouTube</span></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr>
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    <hr>
+    <footer>
+      <p>
+        Background: <a href="https://www.toptal.com/designers/subtlepatterns/" target="_blank" rel="noreferrer">Toptal Subtle Patterns</a>
+      </p>
+    </footer>
+    {%- if 'production' === app.env -%}
+    <script src="{{ '/assets/js/main.min.js' | url }}"></script>
+    {%- else -%}
+    <script src="{{ '/assets/js/main.js' | url }}"></script>
+    {%- endif -%}
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-08C8RZF3X1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-08C8RZF3X1');
+    </script>
+  </body>
+</html>

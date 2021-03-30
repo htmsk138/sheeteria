@@ -1,0 +1,27 @@
+---
+layout: layouts/main
+pagination:
+  data: collections.songs
+  size: 1
+  alias: song
+permalink: "/sheet/{{ song.id }}/index.html"
+eleventyComputed:
+  title: "Sheet music for {{ song.title | safe }} ({{ song.artist | safe }})"
+  description: "Sheet music for {{ song.artist | safe }}'s {{ song.title | safe }}"
+---
+<article>
+  <h1>{{ song.title }}</h1>
+  <p>
+    By {{ song.artist }}
+  </p>
+  <ul>
+    {%- for id, style in song.sheetList -%}
+    <li>
+      <a href="{{ './' + id + '/' | url }}">{{ style }}</a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</article>
+<p>
+  <a href="{{ '/' | url }}">&laquo; Back to sheet list</a>
+</p>
