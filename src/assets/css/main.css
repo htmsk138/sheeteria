@@ -39,6 +39,15 @@ a:hover {
   text-decoration: underline;
 }
 
+p a,
+p a:visited {
+  text-decoration: underline;
+}
+
+p a:hover {
+  text-decoration: none;
+}
+
 i[class^="icon"] {
   font-size: 150%;
 }
