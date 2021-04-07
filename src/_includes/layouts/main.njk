@@ -57,6 +57,7 @@
     <script src="{{ '/assets/js/main.js' | url }}"></script>
     {%- endif -%}
 
+    {%- if 'production' === app.env -%}
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-08C8RZF3X1"></script>
     <script>
@@ -66,5 +67,6 @@
 
       gtag('config', 'G-08C8RZF3X1');
     </script>
+    {%- endif -%}
   </body>
 </html>
