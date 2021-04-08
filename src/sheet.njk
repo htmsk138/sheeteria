@@ -18,6 +18,11 @@ eleventyComputed:
   <p>
     <iframe width="442" height="250" src="https://www.youtube.com/embed/{{ sheet.yt_id }}" title="{{ sheet.title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </p>
+  {%- if ('Easy Piano' == sheet.style) -%}
+  <p>
+    <a href="https://youtu.be/{{ sheet.yt_id }}" target="_blank" rel="noreferrer">Watch Synthesia tutorial on YouTube</a>
+  </p>
+  {%- endif -%}
   {%- endif -%}
   <table>
     <tbody>
@@ -39,10 +44,10 @@ eleventyComputed:
       </tr>
       <tr>
         <th>
-          Publish
+          Level
         </th>
         <td>
-          {{ sheet.published_on }}
+          {{ 'Beginner' if 'Easy Piano' == sheet.style else 'Intermediate/advanced' }}
         </td>
       </tr>
       <tr>
@@ -51,6 +56,14 @@ eleventyComputed:
         </th>
         <td>
           {{ sheet.key }} (original: {{ sheet.org_key }})
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Published
+        </th>
+        <td>
+          {{ sheet.published_on }}
         </td>
       </tr>
       {%- if sheet.comment -%}
