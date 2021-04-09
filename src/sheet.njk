@@ -20,7 +20,7 @@ eleventyComputed:
   </p>
   {%- if ('Easy Piano' == sheet.style) -%}
   <p>
-    <a href="https://youtu.be/{{ sheet.yt_id }}" target="_blank" rel="noreferrer">Watch Synthesia tutorial on YouTube</a>
+    <a href="https://youtu.be/{{ sheet.yt_id }}" target="_blank" rel="noreferrer" data-label="watch_{{ sheet.id }}">Watch Synthesia tutorial on YouTube</a>
   </p>
   {%- endif -%}
   {%- endif -%}
@@ -79,7 +79,7 @@ eleventyComputed:
     </tbody>
   </table>
   <p>
-    <a class="btn" href="https://www.sheetmusicplus.com/title/{{ sheet.smp_id }}" target="_blank" rel="noreferrer">Buy sheet music</a>
+    <a class="btn" href="https://www.sheetmusicplus.com/title/{{ sheet.smp_id }}" target="_blank" rel="noreferrer" data-label="buy_{{ sheet.id }}">Buy sheet music</a>
   </p>
 </article>
 

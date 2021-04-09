@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | url}}">
     <link rel="stylesheet" href="{{ '/assets/css/sheeteria_icons.css' | url}}">
     {%- endif -%}
+    {% include 'parts/gtag.njk' %}
   </head>
   <body>
     <header>
@@ -33,10 +34,10 @@
             <a href="{{ '/about' | url }}">About</a>
           </li>
           <li>
-            <a href="https://www.youtube.com/channel/UCu_Dz2SPTeCunIDD_sOYcSw" target="_blank" rel="noreferrer"><i class="icon-youtube"><span class="sr-only">YouTube</span></i></a>
+            <a href="https://www.youtube.com/channel/UCu_Dz2SPTeCunIDD_sOYcSw" target="_blank" rel="noreferrer" data-label="youtube"><i class="icon-youtube"><span class="sr-only">YouTube</span></i></a>
           </li>
           <li>
-            <a href="https://www.instagram.com/sheeteriamusic/" target="_blank" rel="noreferrer"><i class="icon-instagram"><span class="sr-only">Instagram</span></i></a>
+            <a href="https://www.instagram.com/sheeteriamusic/" target="_blank" rel="noreferrer" data-label="instagram"><i class="icon-instagram"><span class="sr-only">Instagram</span></i></a>
           </li>
         </ul>
       </nav>
@@ -57,18 +58,6 @@
     <script src="{{ '/assets/js/main.min.js' | url }}"></script>
     {%- else -%}
     <script src="{{ '/assets/js/main.js' | url }}"></script>
-    {%- endif -%}
-
-    {%- if 'production' === app.env -%}
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-08C8RZF3X1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-08C8RZF3X1');
-    </script>
     {%- endif -%}
   </body>
 </html>

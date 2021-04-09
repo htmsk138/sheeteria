@@ -1,0 +1,7 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-08C8RZF3X1"></script>
+{%- if 'production' === app.env -%}
+<script src="{{ '/assets/js/ga.min.js' | url }}"></script>
+{%- else -%}
+<script src="{{ '/assets/js/ga.js' | url }}"></script>
+{%- endif -%}
