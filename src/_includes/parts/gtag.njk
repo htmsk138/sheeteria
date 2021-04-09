@@ -1,7 +1,32 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-08C8RZF3X1"></script>
-{%- if 'production' === app.env -%}
-<script src="{{ '/assets/js/ga.min.js' | url }}"></script>
-{%- else -%}
-<script src="{{ '/assets/js/ga.js' | url }}"></script>
-{%- endif -%}
+<script>
+// Init
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-08C8RZF3X1');
+
+// Track outbound link clicks
+document.addEventListener('DOMContentLoaded', function() {
+	document.querySelectorAll('a[data-label]').forEach(function(link) {
+		link.addEventListener('click', function(e) {
+			gtag('event', 'click', {
+				'event_category': 'outbound',
+				'event_label': e.currentTarget.dataset.label,
+				'transport_type': 'beacon',
+			});
+		});
+  });
+});
+
+// Track search terms
+function trackSearch(term) {
+  if (term) {
+    gtag('event', 'search', {
+      'search_term': term,
+      'transport_type': 'beacon',
+    });
+  }
+}
+</script>
