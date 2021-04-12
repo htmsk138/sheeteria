@@ -86,7 +86,7 @@ h1 {
 
 .site-description {
   line-height: 1.2;
-  margin: 0 0 2em;
+  margin: 0 0 3em;
   opacity: .7;
   text-align: center;
 }
@@ -96,9 +96,15 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
+}
+
+@media (max-width: 27em) {
+  nav ul {
+    max-width: 20em;
+  }
 }
 
 nav a {
