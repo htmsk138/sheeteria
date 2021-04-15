@@ -2,6 +2,9 @@ const isProduction = 'production' === process.env.ELEVENTY_ENV;
 const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {
+  /**
+   * Build songs data based on sheets data.
+   */
   eleventyConfig.addCollection('songs', function(collectionApi) {
     var songs = {};
     collectionApi.items[0].data.sheeteria.forEach(function(sheet) {
