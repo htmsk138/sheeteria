@@ -22,6 +22,14 @@ module.exports = function (eleventyConfig) {
     return Object.values(songs);
   });
 
+  /**
+   * Convert sheet id for shortened URL.
+   * It's "song ID without leading zeros" + "-" + "variation ID without leading zeros" (e.g. 0003-01 -> 3-1)
+   */
+  eleventyConfig.addFilter('shortslug', function(id) {
+    return id.replace(/^0+/, '').replace(/-0?/, '-');
+  });
+
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if(isProduction && outputPath.endsWith(".html")) {
       return htmlmin.minify(content, {
@@ -42,7 +50,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/assets/img');
   eleventyConfig.addPassthroughCopy('src/assets/font');
   eleventyConfig.addPassthroughCopy('src/favicon.ico');
-  eleventyConfig.addPassthroughCopy('src/_redirects');
 
   eleventyConfig.setDataDeepMerge(true);
 

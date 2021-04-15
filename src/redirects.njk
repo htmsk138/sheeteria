@@ -1,0 +1,14 @@
+---
+permalink: "_redirects"
+---
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
+# Redirect default Netlify subdomain to primary domain
+https://sheeteria.netlify.app/* https://sheeteria.com/:splat 301!
+
+{% for sheet in sheeteria -%}
+/{{ sheet.id | shortslug }}	/sheet/{{ sheet.id | replace('-', '/') }}/	301
+{% endfor -%}
+{% for song in collections.songs -%}
+/{{ song.id | shortslug }}	/sheet/{{ song.id }}/	301
+{% endfor -%}
