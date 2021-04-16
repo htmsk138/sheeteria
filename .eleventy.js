@@ -49,6 +49,7 @@ module.exports = function (eleventyConfig) {
   }
   eleventyConfig.addPassthroughCopy('src/assets/img');
   eleventyConfig.addPassthroughCopy('src/assets/font');
+  eleventyConfig.addPassthroughCopy('src/assets/audio');
   eleventyConfig.addPassthroughCopy('src/favicon.ico');
 
   eleventyConfig.setDataDeepMerge(true);

@@ -24,6 +24,13 @@ eleventyComputed:
   </p>
   {%- endif -%}
   {%- endif -%}
+  {%- if 'Lead Sheet' == sheet.style -%}
+  <p>
+    <audio controls>
+      <source src="{{ '/assets/audio/' + sheet.id.slice(0,-3) + '.mp3' | url }}" type="audio/mpeg">
+    </audio>
+  </p>
+  {%- endif -%}
   <table>
     <tbody>
       <tr>
@@ -39,9 +46,10 @@ eleventyComputed:
           Style
         </th>
         <td>
-          {{ sheet.style }}
+          {{ sheet.style }}{{ ' (melody and chord)' if 'Lead Sheet' == sheet.style }}
         </td>
       </tr>
+      {%- if 'Lead Sheet' != sheet.style -%}
       <tr>
         <th>
           Level
@@ -50,6 +58,7 @@ eleventyComputed:
           {{ 'Beginner' if 'Easy Piano' == sheet.style else 'Intermediate/advanced' }}
         </td>
       </tr>
+      {%- endif -%}
       <tr>
         <th>
           Key
