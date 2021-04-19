@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
+:root {
+  --text-color: #404040;
+  --accent-color1: #404040;
+  --accent-color2: #404040;
+}
+
 html {
   background: url(../img/lightpaperfibers.png);
   font-size: 62.5%;
 }
 
 body {
-	color: #404040;
+	color: var(--text-color);
 	font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
@@ -30,17 +36,20 @@ a:visited {
 
 a:active,
 a:focus {
+  color: var(--accent-color1);
   outline: 1px dotted;
   outline-offset: .1em;
 }
 
 a:hover {
+  color: var(--accent-color1);
   outline: none;
   text-decoration: underline;
 }
 
 p a,
 p a:visited {
+  color: var(--accent-color1);
   text-decoration: underline;
 }
 
@@ -54,7 +63,8 @@ i[class^="icon"] {
 
 hr {
   border-top: none;
-  border-bottom: 1px dashed rgba(0,0,0,.3);
+  border-bottom: 1px dashed var(--accent-color2);
+  opacity: .3;
 }
 
 header {
@@ -75,16 +85,19 @@ main {
 }
 
 h1 {
+  color: var(--accent-color2);
   font-size: 32px;
   font-size: 3.2rem;
   text-align: center;
 }
 
 h2 {
+  color: var(--accent-color2);
   margin-top: 2em;
 }
 
 h3 {
+  color: var(--accent-color2);
   margin-top: 1.5em;
 }
 
@@ -126,6 +139,7 @@ li {
 input[type=text] {
   border: 1px solid #ccc;
   box-sizing: border-box;
+  color: inherit;
   display: block;
   font-size: inherit;
   padding: .5em .8em;
@@ -135,9 +149,8 @@ input[type=text] {
 }
 
 .btn {
-  background: #fff;
-  border: 1px solid #404040;
-  color: #404040;
+  border: 1px solid;
+  color: var(--text-color);
   display: inline-block;
   font-size: 120%;
   font-weight: bold;
@@ -151,7 +164,7 @@ input[type=text] {
 .btn:active,
 .btn:focus,
 .btn:hover {
-  background: #404040;
+  background: var(--accent-color2);
   color: #fff;
   opacity: 1;
   text-decoration: none;
