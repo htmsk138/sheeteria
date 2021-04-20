@@ -6,8 +6,8 @@ pagination:
   alias: song
 permalink: "/sheet/{{ song.id }}/index.html"
 eleventyComputed:
-  title: "Sheet music for {{ song.title | safe }} ({{ song.artist | safe }})"
-  description: "Sheet music for {{ song.artist | safe }}'s {{ song.title | safe }}"
+  title: "All Sheet Music for {{ song.artist | safe }}'s {{ song.title | safe }}"
+  description: "All Sheet Music for {{ song.artist | safe }}'s {{ song.title | safe }}"
 ---
 <article>
   <h1>{{ song.title }}</h1>

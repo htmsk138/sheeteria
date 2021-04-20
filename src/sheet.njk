@@ -9,8 +9,9 @@ pagination:
   alias: sheet
 permalink: "/sheet/{{ sheet.id | replace('-', '/') }}/index.html"
 eleventyComputed:
-  title: "{{ sheet.title | safe }} ({{ sheet.artist | safe }}) - {{ sheet.style | safe }}"
-  description: "{{ sheet.style | safe }} sheet music for {{ sheet.artist | safe }}'s {{ sheet.title | safe }}"
+  title: "{{ sheet.style if sheet.style == 'Lead Sheet' else sheet.style + ' Sheet Music' | safe }} for {{ sheet.artist | safe }}'s {{ sheet.title | safe }}"
+  shortTitle: "{{ sheet.title | safe }} ({{ sheet.artist | safe }}) - {{ sheet.style | safe }}"
+  description: "{{ sheet.style if sheet.style == 'Lead Sheet' else sheet.style + ' Sheet Music' | safe }} for {{ sheet.artist | safe }}'s {{ sheet.title | safe }}"
 ---
 <article class="sheet-detail">
   <h1>{{ sheet.title }}</h1>
