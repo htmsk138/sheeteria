@@ -36,13 +36,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('sheetFilter', function(text) {
     switch(text.toLowerCase()) {
       case 'lead sheet':
-        return 'lead-sheet';
+        return 's0';
 
       case 'easy piano':
-        return 'easy-piano';
+        return 's2';
     }
 
-    return 'piano-solo';
+    return 's1';
   });
 
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {

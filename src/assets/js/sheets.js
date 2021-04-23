@@ -29,11 +29,8 @@ function searchSheets(terms) {
   var termList = terms.toLowerCase().split(' '), match = false, itemTitle;
 
   sheets.forEach(function(item) {
-    // Shorten target value to "Song Title (Artist Name)"
-    itemTitle = getTitleForCompare(item.innerText);
-
-    // Test if the above contains every one of space-separated terms
-    match = termList.every(function(term) { return itemTitle.includes(term) });
+    // Test if the song title and artist name contains every one of space-separated terms
+    match = termList.every(function(term) { return item.dataset.kw.includes(term) });
 
     // Display/hide the item depending on the test result
     item.style.display = match ? '' : 'none';
@@ -59,7 +56,7 @@ function updateFilters() {
 function filterSheets() {
   var match = false;
   sheets.forEach(function(item) {
-    match = filters.every(function(filter) { return item.dataset.filters.includes(filter) });
+    match = filters.every(function(filter) { return item.dataset.f.includes(filter) });
     item.classList.toggle('filtered', !match);
   });
 }
@@ -79,11 +76,11 @@ function sortSheets(key) {
 
       switch (key) {
         case 'title': // Title ASC
-          shouldSwitch = getTitleForCompare(sheets[i].innerText) > getTitleForCompare(sheets[i + 1].innerText);
+          shouldSwitch = sheets[i].dataset.kw > sheets[i + 1].dataset.kw;
           break;
 
         case 'publish-date': // Date DESC
-          shouldSwitch = sheets[i].dataset.published < sheets[i + 1].dataset.published;
+          shouldSwitch = sheets[i].dataset.pd < sheets[i + 1].dataset.pd;
           break;
       }
 
@@ -97,11 +94,4 @@ function sortSheets(key) {
     // Update sheet list
     sheets = document.querySelectorAll('#sheet-list li');
   }
-}
-
-/**
- * Get "song title (artist name)" format text of sheet list item.
- */
-function getTitleForCompare(text) {
-  return text.trim().split(' - ')[0].toLowerCase();
 }
