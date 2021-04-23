@@ -30,6 +30,21 @@ module.exports = function (eleventyConfig) {
     return id.replace(/^0+/, '').replace(/-0?/, '-');
   });
 
+  /**
+   * Generate filter slug based on text passed on.
+   */
+  eleventyConfig.addFilter('sheetFilter', function(text) {
+    switch(text.toLowerCase()) {
+      case 'lead sheet':
+        return 'lead-sheet';
+
+      case 'easy piano':
+        return 'easy-piano';
+    }
+
+    return 'piano-solo';
+  });
+
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if(isProduction && outputPath.endsWith(".html")) {
       return htmlmin.minify(content, {

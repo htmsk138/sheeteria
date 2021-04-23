@@ -3,12 +3,38 @@ layout: layouts/main
 title: Search sheet music
 ---
 <h1>Search Sheet Music</h1>
-<p>
-  <input id="sheet-search-keyword" type="text" placeholder="Song title or artist name" onkeyup="filterSheets(this.value)" onblur="trackSearch(this.value)" aria-label="Search by song title or artist name">
-</p>
+<form>
+	<p>
+	  <input id="sheet-search-keyword" type="text" placeholder="Song title or artist name" onkeyup="searchSheets(this.value)" onblur="trackSearch(this.value)" aria-label="Search by song title or artist name">
+	</p>
+	<table>
+		<tbody>
+			<tr>
+				<th>
+					Style:
+				</th>
+				<td>
+					<label><input type="radio" name="filter-style" value="all" checked>All</label>&nbsp;
+					<label><input type="radio" name="filter-style" value="piano-solo">Piano solo</label>&nbsp;
+					<label><input type="radio" name="filter-style" value="easy-piano">Easy piano</label>&nbsp;
+					<label><input type="radio" name="filter-style" value="lead-sheet">Lead sheet</label>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					Sort by:
+				</th>
+				<td>
+					<label><input type="radio" name="sort" value="publish-date" checked>Publish date</label>&nbsp;
+					<label><input type="radio" name="sort" value="title">Title</label>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</form>
 <ul id="sheet-list">
   {%- for sheet in collections.sheet -%}
-  <li>
+  <li data-filters="{{ sheet.data.filters }}" data-published="{{ sheet.data.publishDate }}">
     <a href="{{ sheet.url }}">
       {{ sheet.data.shortTitle }}
     </a>

@@ -136,6 +136,15 @@ li {
 	margin: 0 0 .5em;
 }
 
+form {
+  margin: 2em 0;
+}
+
+form label,
+form th {
+  white-space: nowrap;
+}
+
 input[type=text] {
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -143,7 +152,7 @@ input[type=text] {
   display: block;
   font-size: inherit;
   padding: .5em .8em;
-  margin: 0 auto 3em;
+  margin: 0 auto;
   max-width: 90vw;
   width: 20em;
 }
@@ -204,4 +213,8 @@ td {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.filtered {
+  display: none !important;
 }

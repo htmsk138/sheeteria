@@ -12,6 +12,8 @@ eleventyComputed:
   title: "{{ sheet.style if sheet.style == 'Lead Sheet' else sheet.style + ' Sheet Music' | safe }} for {{ sheet.artist | safe }}'s {{ sheet.title | safe }}"
   shortTitle: "{{ sheet.title | safe }} ({{ sheet.artist | safe }}) - {{ sheet.style | safe }}"
   description: "{{ sheet.style if sheet.style == 'Lead Sheet' else sheet.style + ' Sheet Music' | safe }} for {{ sheet.artist | safe }}'s {{ sheet.title | safe }}"
+  filters: "{{ sheet.style | sheetFilter }}"
+  publishDate: "{{ sheet.published_on }}"
 ---
 <article class="sheet-detail">
   <h1>{{ sheet.title }}</h1>
