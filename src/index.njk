@@ -41,3 +41,8 @@ title: Search sheet music
   </li>
   {%- endfor -%}
 </ul>
+{%- if 'production' === app.env -%}
+<script src="{{ '/assets/js/sheets.min.js' | url }}?v=20210423"></script>
+{%- else -%}
+<script src="{{ '/assets/js/sheets.js' | url }}"></script>
+{%- endif -%}

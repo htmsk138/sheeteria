@@ -60,10 +60,5 @@
         Background: <a href="https://www.toptal.com/designers/subtlepatterns/" target="_blank" rel="noreferrer">Toptal Subtle Patterns</a>
       </p>
     </footer>
-    {%- if 'production' === app.env -%}
-    <script src="{{ '/assets/js/sheets.min.js' | url }}?v=20210423"></script>
-    {%- else -%}
-    <script src="{{ '/assets/js/sheets.js' | url }}"></script>
-    {%- endif -%}
   </body>
 </html>
