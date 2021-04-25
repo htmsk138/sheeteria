@@ -28,13 +28,6 @@ eleventyComputed:
   </p>
   {%- endif -%}
   {%- endif -%}
-  {%- if 'Lead Sheet' == sheet.style -%}
-  <p>
-    <audio controls>
-      <source src="{{ '/assets/audio/' + sheet.id.slice(0,-3) + '.mp3' | url }}" type="audio/mpeg">
-    </audio>
-  </p>
-  {%- endif -%}
   <table>
     <tbody>
       <tr>
