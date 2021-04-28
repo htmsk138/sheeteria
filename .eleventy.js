@@ -27,7 +27,7 @@ module.exports = function (eleventyConfig) {
    * It's "song ID without leading zeros" + "-" + "variation ID without leading zeros" (e.g. 0003-01 -> 3-1)
    */
   eleventyConfig.addFilter('shortslug', function(id) {
-    return id.replace(/^0+/, '').replace(/-0?/, '-');
+    return id.replace(/^0+/, '').replace(/-0?/, '-').toLowerCase();
   });
 
   /**
