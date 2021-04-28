@@ -18,7 +18,7 @@ eleventyComputed:
 ---
 <article class="sheet-detail">
   <h1>{{ sheet.title }}</h1>
-  {%- if (sheet.yt_id) -%}
+  {%- if sheet.yt_id -%}
   <p>
     <iframe width="442" height="250" src="https://www.youtube.com/embed/{{ sheet.yt_id }}" title="{{ sheet.title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </p>
@@ -56,6 +56,7 @@ eleventyComputed:
         </td>
       </tr>
       {%- endif -%}
+      {%- if sheet.published_on -%}
       <tr>
         <th>
           Key
@@ -72,6 +73,7 @@ eleventyComputed:
           {{ sheet.published_on }}
         </td>
       </tr>
+      {%- endif -%}
       {%- if sheet.comment -%}
       <tr>
         <th>
@@ -85,7 +87,11 @@ eleventyComputed:
     </tbody>
   </table>
   <p>
+    {%- if sheet.smp_id -%}
     <a class="btn" href="https://www.sheetmusicplus.com/title/{{ sheet.smp_id }}" target="_blank" rel="noreferrer" data-label="buy_{{ sheet.id }}">Buy sheet music</a>
+    {%- else -%}
+    Coming soon!
+    {%- endif -%}
   </p>
 </article>
 

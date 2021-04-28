@@ -34,11 +34,13 @@ title: Search sheet music
 </form>
 <ul id="sheet-list">
   {%- for sheet in collections.sheet -%}
+  {%- if sheet.data.publishDate -%}
   <li data-kw="{{ sheet.data.keyword }}" data-f="{{ sheet.data.filters }}" data-pd="{{ sheet.data.publishDate }}">
     <a href="{{ sheet.url }}">
       {{ sheet.data.displayTitle }}
     </a>
   </li>
+  {%- endif -%}
   {%- endfor -%}
 </ul>
 {%- if 'production' === app.env -%}
