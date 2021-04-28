@@ -4,7 +4,7 @@ pagination:
   data: collections.songs
   size: 1
   alias: song
-permalink: "/sheet/{{ song.id }}/index.html"
+permalink: "/sheet/{{ song.id | lower }}/index.html"
 eleventyComputed:
   title: "All Sheet Music for {{ song.artist | safe }}'s {{ song.title | safe }}"
   description: "All Sheet Music for {{ song.artist | safe }}'s {{ song.title | safe }}"

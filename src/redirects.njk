@@ -7,8 +7,8 @@ permalink: "_redirects"
 https://sheeteria.netlify.app/* https://sheeteria.com/:splat 301!
 
 {% for sheet in sheeteria -%}
-/{{ sheet.id | shortslug }}	/sheet/{{ sheet.id | replace('-', '/') }}/	301
+/{{ sheet.id | shortslug }}	/sheet/{{ sheet.id | lower | replace('-', '/') }}/	301
 {% endfor -%}
 {% for song in collections.songs -%}
-/{{ song.id | shortslug }}	/sheet/{{ song.id }}/	301
+/{{ song.id | shortslug }}	/sheet/{{ song.id | lower }}/	301
 {% endfor -%}

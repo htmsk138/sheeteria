@@ -7,7 +7,7 @@ pagination:
   size: 1
   addAllPagesToCollections: true
   alias: sheet
-permalink: "/sheet/{{ sheet.id | replace('-', '/') }}/index.html"
+permalink: "/sheet/{{ sheet.id | lower | replace('-', '/') }}/index.html"
 eleventyComputed:
   title: "{{ sheet.style if sheet.style == 'Lead Sheet' else sheet.style + ' Sheet Music' | safe }} for {{ sheet.artist | safe }}'s {{ sheet.title | safe }}"
   displayTitle: "{{ sheet.title | safe }} ({{ sheet.artist | safe }}) - {{ sheet.style | safe }}"
