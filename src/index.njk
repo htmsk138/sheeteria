@@ -3,7 +3,7 @@ layout: layouts/main
 title: Search sheet music
 ---
 <h1>Search Sheet Music</h1>
-<form>
+<section>
 	<p>
 	  <input id="sheet-search-keyword" type="text" placeholder="Song title or artist name" onkeyup="searchSheets(this.value)" onblur="trackSearch(this.value)" aria-label="Search by song title or artist name">
 	</p>
@@ -31,20 +31,22 @@ title: Search sheet music
 			</tr>
 		</tbody>
 	</table>
-</form>
-<ul id="sheet-list">
-  {%- for sheet in collections.sheet -%}
-  {%- if sheet.data.publishDate -%}
-  <li data-kw="{{ sheet.data.keyword }}" data-f="{{ sheet.data.filters }}" data-pd="{{ sheet.data.publishDate }}">
-    <a href="{{ sheet.url }}">
-      {{ sheet.data.displayTitle }}
-    </a>
-  </li>
-  {%- endif -%}
-  {%- endfor -%}
-</ul>
-{%- if 'production' === app.env -%}
-<script src="{{ '/assets/js/sheets.min.js' | url }}?v=20210423"></script>
-{%- else -%}
-<script src="{{ '/assets/js/sheets.js' | url }}"></script>
-{%- endif -%}
+</section>
+<section>
+	<ul id="sheet-list">
+	  {%- for sheet in collections.sheet -%}
+	  {%- if sheet.data.publishDate -%}
+	  <li data-kw="{{ sheet.data.keyword }}" data-f="{{ sheet.data.filters }}" data-pd="{{ sheet.data.publishDate }}">
+	    <a href="{{ sheet.url }}">
+	      {{ sheet.data.displayTitle }}
+	    </a>
+	  </li>
+	  {%- endif -%}
+	  {%- endfor -%}
+	</ul>
+	{%- if 'production' === app.env -%}
+	<script src="{{ '/assets/js/sheets.min.js' | url }}?v=20210423"></script>
+	{%- else -%}
+	<script src="{{ '/assets/js/sheets.js' | url }}"></script>
+	{%- endif -%}
+</section>

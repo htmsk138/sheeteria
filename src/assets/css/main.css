@@ -81,13 +81,18 @@ footer {
 }
 
 main {
-  padding: 3em 0;
+  padding: 2em 0;
+}
+
+main > section:not(:last-child) {
+  margin: 0 0 2em;
 }
 
 h1 {
   color: var(--accent-color2);
   font-size: 32px;
   font-size: 3.2rem;
+  margin: 0 0 1em;
   text-align: center;
 }
 
@@ -134,10 +139,6 @@ nav a {
 
 li {
 	margin: 0 0 .5em;
-}
-
-form {
-  margin: 2em 0;
 }
 
 form label,
