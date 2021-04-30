@@ -141,8 +141,8 @@ li {
 	margin: 0 0 .5em;
 }
 
-form label,
-form th {
+.filters label,
+.filters th {
   white-space: nowrap;
 }
 
