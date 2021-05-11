@@ -18,13 +18,13 @@ eleventyComputed:
 ---
 <article class="sheet-detail">
   <h1>{{ sheet.title }}</h1>
-  {%- if sheet.yt_id -%}
+  {%- if sheet.youtube -%}
   <p>
-    <iframe width="442" height="250" src="https://www.youtube.com/embed/{{ sheet.yt_id }}" title="{{ sheet.title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="442" height="250" src="https://www.youtube.com/embed/{{ sheet.youtube | replace('https://youtu.be/', '') }}" title="{{ sheet.title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </p>
   {%- if ('Easy Piano' == sheet.style) -%}
   <p>
-    <a href="https://youtu.be/{{ sheet.yt_id }}" target="_blank" rel="noreferrer" data-label="watch_{{ sheet.id }}">Watch Synthesia tutorial on YouTube</a>
+    <a href="{{ sheet.youtube }}" target="_blank" rel="noreferrer" data-label="watch_{{ sheet.id }}">Watch Synthesia tutorial on YouTube</a>
   </p>
   {%- endif -%}
   {%- endif -%}
@@ -70,7 +70,17 @@ eleventyComputed:
           Published
         </th>
         <td>
-          {{ sheet.published_on }}
+          {{ sheet.published_on.slice(0, 10) }}
+        </td>
+      </tr>
+      {%- endif -%}
+      {%- if sheet.org_url -%}
+      <tr>
+        <th>
+          Original
+        </th>
+        <td>
+          <a href="{{ sheet.org_url }}" target="_blank" rel="noreferrer">{{ sheet.org_type or "Official music video" }}</a>
         </td>
       </tr>
       {%- endif -%}
@@ -87,8 +97,8 @@ eleventyComputed:
     </tbody>
   </table>
   <p>
-    {%- if sheet.smp_id -%}
-    <a class="btn" href="https://www.sheetmusicplus.com/title/{{ sheet.smp_id }}" target="_blank" rel="noreferrer" data-label="buy_{{ sheet.id }}">Buy sheet music</a>
+    {%- if sheet.store_url -%}
+    <a class="btn" href="{{ sheet.store_url }}" target="_blank" rel="noreferrer" data-label="buy_{{ sheet.id }}">Buy sheet music</a>
     {%- else -%}
     Coming soon!
     {%- endif -%}
