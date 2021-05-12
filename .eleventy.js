@@ -1,5 +1,6 @@
 const isProduction = 'production' === process.env.ELEVENTY_ENV;
 const htmlmin = require("html-minifier");
+const parse = require("csv-parse/lib/sync");
 
 module.exports = function (eleventyConfig) {
   /**
@@ -43,6 +44,16 @@ module.exports = function (eleventyConfig) {
     }
 
     return 's1';
+  });
+
+  /**
+   * Load data from csv file.
+   */
+  eleventyConfig.addDataExtension("csv", (contents) => {
+    return parse(contents, {
+      columns: true,
+      skip_empty_lines: true,
+    });
   });
 
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
