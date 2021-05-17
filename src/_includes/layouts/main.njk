@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {%- if 'production' === app.env -%}
-    <link rel="stylesheet" href="{{ '/assets/css/main.min.css?v=20210511' | url}}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.min.css?v=20210517' | url}}">
     <link rel="stylesheet" href="{{ '/assets/css/sheeteria_icons.min.css' | url}}">
     {%- else -%}
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | url}}">
@@ -44,6 +44,9 @@
           </li>
           <li>
             <a href="https://twitter.com/sheeteriamusic" target="_blank" rel="noreferrer" data-label="twitter"><i class="icon-twitter"><span class="sr-only">Twitter</span></i></a>
+          </li>
+          <li>
+            <a href="{{ '/feed.xml' | url }}"><i class="icon-rss"><span class="sr-only">RSS feed</span></i></a>
           </li>
         </ul>
       </nav>

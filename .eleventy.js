@@ -56,6 +56,13 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  /**
+   * Format date string for RSS feed.
+   */
+  eleventyConfig.addFilter('rssDate', function(date) {
+    return new Date(date).toUTCString();
+  });
+
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if(isProduction && outputPath.endsWith(".html")) {
       return htmlmin.minify(content, {

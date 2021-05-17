@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'sheeteria_icons';
-  src: url('../font/sheeteria_icons.eot?56129174');
-  src: url('../font/sheeteria_icons.eot?56129174#iefix') format('embedded-opentype'),
-       url('../font/sheeteria_icons.woff2?56129174') format('woff2'),
-       url('../font/sheeteria_icons.woff?56129174') format('woff'),
-       url('../font/sheeteria_icons.ttf?56129174') format('truetype'),
-       url('../font/sheeteria_icons.svg?56129174#sheeteria_icons') format('svg');
+  src: url('../font/sheeteria_icons.eot?11431253');
+  src: url('../font/sheeteria_icons.eot?11431253#iefix') format('embedded-opentype'),
+       url('../font/sheeteria_icons.woff2?11431253') format('woff2'),
+       url('../font/sheeteria_icons.woff?11431253') format('woff'),
+       url('../font/sheeteria_icons.ttf?11431253') format('truetype'),
+       url('../font/sheeteria_icons.svg?11431253#sheeteria_icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'sheeteria_icons';
-    src: url('../font/sheeteria_icons.svg?56129174#sheeteria_icons') format('svg');
+    src: url('../font/sheeteria_icons.svg?11431253#sheeteria_icons') format('svg');
   }
 }
 */
@@ -56,5 +56,6 @@
 }
  
 .icon-twitter:before { content: '\f099'; } /* '' */
+.icon-rss:before { content: '\f09e'; } /* '' */
 .icon-youtube:before { content: '\f167'; } /* '' */
 .icon-instagram:before { content: '\f16d'; } /* '' */
