@@ -36,7 +36,7 @@ title: Search sheet music
 	<ul id="sheet-list">
 	  {%- for sheet in collections.sheet -%}
 	  {%- if sheet.data.publishDate -%}
-	  <li data-kw="{{ sheet.data.keyword }}" data-f="{{ sheet.data.filters }}" data-pd="{{ sheet.data.publishDate }}">
+	  <li data-kw="{{ sheet.data.keyword }}" data-f="{{ sheet.data.filters }}" data-pd="{{ sheet.data.publishDate | replace('-', '') }}">
 	    <a href="{{ sheet.url }}">
 	      {{ sheet.data.displayTitle }}
 	    </a>
