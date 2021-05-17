@@ -33,6 +33,7 @@ title: Search sheet music
 	</table>
 </section>
 <section>
+	<p id="nomatch" style="display: none;">No match found. Sorry!</p>
 	<ul id="sheet-list">
 	  {%- for sheet in collections.sheet -%}
 	  {%- if sheet.data.publishDate -%}
@@ -45,7 +46,7 @@ title: Search sheet music
 	  {%- endfor -%}
 	</ul>
 	{%- if 'production' === app.env -%}
-	<script src="{{ '/assets/js/sheets.min.js' | url }}?v=20210423"></script>
+	<script src="{{ '/assets/js/sheets.min.js' | url }}?v=20210517"></script>
 	{%- else -%}
 	<script src="{{ '/assets/js/sheets.js' | url }}"></script>
 	{%- endif -%}

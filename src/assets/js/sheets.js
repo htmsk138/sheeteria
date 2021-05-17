@@ -1,6 +1,7 @@
-var sheets = [], filters = [];
+var sheets = [], filters = [], noMatchMsg = null;
 document.addEventListener('DOMContentLoaded', function() {
   sheets = document.querySelectorAll('#sheet-list li');
+  noMatchMsg = document.getElementById('nomatch');
 
   /**
    * Toggle filter.
@@ -35,6 +36,8 @@ function searchSheets(terms) {
     // Display/hide the item depending on the test result
     item.style.display = match ? '' : 'none';
   });
+
+  isNoMatch();
 }
 
 /**
@@ -59,6 +62,8 @@ function filterSheets() {
     match = filters.every(function(filter) { return item.dataset.f.includes(filter) });
     item.classList.toggle('filtered', !match);
   });
+
+  isNoMatch();
 }
 
 /**
@@ -94,4 +99,13 @@ function sortSheets(key) {
     // Update sheet list
     sheets = document.querySelectorAll('#sheet-list li');
   }
+}
+
+/**
+ * Check if there's no search result and show/hide the message.
+ */
+function isNoMatch() {
+  var anyMatch = Array.from(sheets).some(function(item) { return item.offsetParent !== null });
+  noMatchMsg.style.display = anyMatch ? 'none' : '';
+  return !anyMatch;
 }
