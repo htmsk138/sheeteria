@@ -5,7 +5,7 @@ title: Search sheet music
 <h1>Search Sheet Music</h1>
 <section>
 	<p>
-	  <input type="text" placeholder="Song title or artist name" onkeyup="searchSheets(this.value)" onblur="trackSearch(this.value)" aria-label="Search by song title or artist name">
+	  <input type="text" placeholder="Song title or artist name" onkeyup="searchSheets(this.value)" aria-label="Search by song title or artist name">
 	</p>
 	<table class="filters">
 		<tbody>
@@ -46,7 +46,7 @@ title: Search sheet music
 	  {%- endfor -%}
 	</ul>
 	{%- if 'production' === app.env -%}
-	<script src="{{ '/assets/js/sheets.min.js' | url }}?v=20210517"></script>
+	<script src="{{ '/assets/js/sheets.min.js' | url }}?v=20210520"></script>
 	{%- else -%}
 	<script src="{{ '/assets/js/sheets.js' | url }}"></script>
 	{%- endif -%}

@@ -19,14 +19,4 @@ document.addEventListener('DOMContentLoaded', function() {
 		});
   });
 });
-
-// Track search terms
-function trackSearch(term) {
-  if (term) {
-    gtag('event', 'view_search_results', {
-      'search_term': term,
-      'transport_type': 'beacon',
-    });
-  }
-}
 </script>

@@ -1,4 +1,4 @@
-var sheets = [], filters = [], noMatchMsg = null;
+var sheets = [], keywords = '', filters = [], noMatchMsg = null, prevAnyMatch = true;
 document.addEventListener('DOMContentLoaded', function() {
   sheets = document.querySelectorAll('#sheet-list li');
   noMatchMsg = document.getElementById('nomatch');
@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
  * Filter sheet list on every keyup event on search box.
  */
 function searchSheets(terms) {
+  keywords = terms;
   var termList = terms.toLowerCase().split(' '), match = false, itemTitle;
 
   sheets.forEach(function(item) {
@@ -37,7 +38,7 @@ function searchSheets(terms) {
     item.style.display = match ? '' : 'none';
   });
 
-  isNoMatch();
+  handleNoMatch();
 }
 
 /**
@@ -63,7 +64,7 @@ function filterSheets() {
     item.classList.toggle('filtered', !match);
   });
 
-  isNoMatch();
+  handleNoMatch();
 }
 
 /**
@@ -104,8 +105,27 @@ function sortSheets(key) {
 /**
  * Check if there's no search result and show/hide the message.
  */
-function isNoMatch() {
+function handleNoMatch() {
   var anyMatch = Array.from(sheets).some(function(item) { return item.offsetParent !== null });
   noMatchMsg.style.display = anyMatch ? 'none' : '';
-  return !anyMatch;
+
+  // If no match for the first time, send the terms to GA
+  if (prevAnyMatch && !anyMatch) {
+    trackSearch();
+  }
+
+  // Save the result
+  prevAnyMatch = anyMatch;
+}
+
+/**
+ * Send search terms to GA.
+ */
+function trackSearch() {
+  if (typeof gtag === 'function') {
+    gtag('event', 'view_search_results', {
+      'search_term': new Array(keywords, ...filters).join(),
+      'transport_type': 'beacon',
+    });
+  }
 }
