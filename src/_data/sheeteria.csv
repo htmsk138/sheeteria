@@ -1,4 +1,7 @@
 id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url,org_type
+0020-00,Piano Man,Billy Joel,Lead Sheet,https://www.sheetmusicplus.com/title/22036499,2021-05-20,,C major,C major,,https://youtu.be/gxEPV4kolz0,Official music video
+0020-01,Piano Man,Billy Joel,Piano Solo,https://www.sheetmusicplus.com/title/22036500,2021-05-20,https://youtu.be/49ZIuQjl1HI,C major,C major,,https://youtu.be/gxEPV4kolz0,Official music video
+0020-02,Piano Man,Billy Joel,Easy Piano,https://www.sheetmusicplus.com/title/22036501,2021-05-20,https://youtu.be/LFiXZashPO4,C major,C major,"It could be a bit challenging for beginners, but you can enjoy the riffs similar to the original's!",https://youtu.be/gxEPV4kolz0,Official music video
 001E-00,Ocean Eyes,Billie Eilish,Lead Sheet,https://www.sheetmusicplus.com/title/22032894,2021-05-15,,E minor,E minor,,https://youtu.be/viimfQi_pUw,Official music video
 001E-01,Ocean Eyes,Billie Eilish,Piano Solo,https://www.sheetmusicplus.com/title/22032895,2021-05-15,https://youtu.be/-S0dmPzzagM,A minor,E minor,,https://youtu.be/viimfQi_pUw,Official music video
 001E-02,Ocean Eyes,Billie Eilish,Easy Piano,https://www.sheetmusicplus.com/title/22032896,2021-05-15,https://youtu.be/j4kVHK2BbUw,E minor,E minor,,https://youtu.be/viimfQi_pUw,Official music video
@@ -70,6 +73,3 @@ id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url
 0021-00,Holy,Justin Bieber Feat. Chance The Rapper,Lead Sheet,,,,F-sharp major,F-sharp major,,https://music.youtube.com/watch?v=4j6ZYUXj24o,Official audio
 0021-01,Holy,Justin Bieber Feat. Chance The Rapper,Piano Solo,,,https://youtu.be/egdeGPVIHsc,F-sharp major,F-sharp major,,https://music.youtube.com/watch?v=4j6ZYUXj24o,Official audio
 0021-02,Holy,Justin Bieber Feat. Chance The Rapper,Easy Piano,,,https://youtu.be/WZ5RX8_W8xo,G major,F-sharp major,,https://music.youtube.com/watch?v=4j6ZYUXj24o,Official audio
-0020-00,Piano Man,Billy Joel,Lead Sheet,,,,C major,C major,,https://youtu.be/gxEPV4kolz0,Official music video
-0020-01,Piano Man,Billy Joel,Piano Solo,,,https://youtu.be/49ZIuQjl1HI,C major,C major,,https://youtu.be/gxEPV4kolz0,Official music video
-0020-02,Piano Man,Billy Joel,Easy Piano,,,https://youtu.be/LFiXZashPO4,C major,C major,"It could be a bit challenging for beginners, but you can enjoy the riffs similar to the original's!",https://youtu.be/gxEPV4kolz0,Official music video
