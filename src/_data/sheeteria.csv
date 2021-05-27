@@ -1,4 +1,8 @@
 id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url,org_type
+0022-00,Runaway,Aurora,Lead Sheet,https://www.sheetmusicplus.com/title/22041830,2021-05-28,,B major,B major,,https://youtu.be/d_HlPboLRL8,Official music video
+0022-01,Runaway,Aurora,Piano Solo,https://www.sheetmusicplus.com/title/22041831,2021-05-28,https://youtu.be/wYfgiZldTl0,B major,B major,I admit it..the rhythms are pretty tricky! Good luck!,https://youtu.be/d_HlPboLRL8,Official music video
+0022-02,Runaway,Aurora,Easy Piano,https://www.sheetmusicplus.com/title/22041832,2021-05-28,https://youtu.be/nWfaBlrBWkE,F major,B major,,https://youtu.be/d_HlPboLRL8,Official music video
+0020-03,Piano Man,Billy Joel,Piano Solo (Quiet ver.),https://www.sheetmusicplus.com/title/22041775,2021-05-28,https://youtu.be/gS9uXq0pWAU,C major,C major,,https://youtu.be/gxEPV4kolz0,Official music video
 0021-00,Holy,Justin Bieber Feat. Chance The Rapper,Lead Sheet,https://www.sheetmusicplus.com/title/22037859,2021-05-21,,F-sharp major,F-sharp major,,https://youtu.be/pvPsJFRGleA,Official music video
 0021-01,Holy,Justin Bieber Feat. Chance The Rapper,Piano Solo,https://www.sheetmusicplus.com/title/22037862,2021-05-21,https://youtu.be/egdeGPVIHsc,F-sharp major,F-sharp major,,https://youtu.be/pvPsJFRGleA,Official music video
 0021-02,Holy,Justin Bieber Feat. Chance The Rapper,Easy Piano,https://www.sheetmusicplus.com/title/22037863,2021-05-21,https://youtu.be/WZ5RX8_W8xo,G major,F-sharp major,,https://youtu.be/pvPsJFRGleA,Official music video
@@ -73,7 +77,3 @@ id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url
 0004-02,Perfect,Ed Sheeran,Easy Piano,https://www.sheetmusicplus.com/title/21987087,2021-03-01,https://youtu.be/YXEwr4zTH9s,G major,A-flat major,,https://youtu.be/2Vv-BfVoq4g,Official music video
 0003-01,Willow,Taylor Swift,Piano Solo,https://www.sheetmusicplus.com/title/21987077,2021-03-01,https://youtu.be/M6wVqSUep90,G major,G major,,https://youtu.be/RsEZmictANA,Official music video
 0003-02,Willow,Taylor Swift,Easy Piano,https://www.sheetmusicplus.com/title/21987084,2021-03-01,https://youtu.be/a7q08N-aRrc,G major,G major,,https://youtu.be/RsEZmictANA,Official music video
-0022-00,Runaway,Aurora,Lead Sheet,,,,B major,B major,,https://youtu.be/d_HlPboLRL8,Official music video
-0022-01,Runaway,Aurora,Piano Solo,,,https://youtu.be/wYfgiZldTl0,B major,B major,I admit it..the rhythms are pretty tricky! Good luck!,https://youtu.be/d_HlPboLRL8,Official music video
-0022-02,Runaway,Aurora,Easy Piano,,,https://youtu.be/nWfaBlrBWkE,F major,B major,,https://youtu.be/d_HlPboLRL8,Official music video
-0020-03,Piano Man,Billy Joel,Piano Solo (Quiet ver.),,,https://youtu.be/gS9uXq0pWAU,C major,C major,,https://youtu.be/gxEPV4kolz0,Official music video
