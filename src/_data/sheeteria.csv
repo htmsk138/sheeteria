@@ -1,7 +1,7 @@
 id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url,org_type
-0021-00,Holy,Justin Bieber Feat. Chance The Rapper,Lead Sheet,https://www.sheetmusicplus.com/title/22037859,2021-05-21,,F-sharp major,F-sharp major,,https://music.youtube.com/watch?v=4j6ZYUXj24o,Official audio
-0021-01,Holy,Justin Bieber Feat. Chance The Rapper,Piano Solo,https://www.sheetmusicplus.com/title/22037862,2021-05-21,https://youtu.be/egdeGPVIHsc,F-sharp major,F-sharp major,,https://music.youtube.com/watch?v=4j6ZYUXj24o,Official audio
-0021-02,Holy,Justin Bieber Feat. Chance The Rapper,Easy Piano,https://www.sheetmusicplus.com/title/22037863,2021-05-21,https://youtu.be/WZ5RX8_W8xo,G major,F-sharp major,,https://music.youtube.com/watch?v=4j6ZYUXj24o,Official audio
+0021-00,Holy,Justin Bieber Feat. Chance The Rapper,Lead Sheet,https://www.sheetmusicplus.com/title/22037859,2021-05-21,,F-sharp major,F-sharp major,,https://youtu.be/pvPsJFRGleA,Official music video
+0021-01,Holy,Justin Bieber Feat. Chance The Rapper,Piano Solo,https://www.sheetmusicplus.com/title/22037862,2021-05-21,https://youtu.be/egdeGPVIHsc,F-sharp major,F-sharp major,,https://youtu.be/pvPsJFRGleA,Official music video
+0021-02,Holy,Justin Bieber Feat. Chance The Rapper,Easy Piano,https://www.sheetmusicplus.com/title/22037863,2021-05-21,https://youtu.be/WZ5RX8_W8xo,G major,F-sharp major,,https://youtu.be/pvPsJFRGleA,Official music video
 0020-00,Piano Man,Billy Joel,Lead Sheet,https://www.sheetmusicplus.com/title/22036499,2021-05-20,,C major,C major,,https://youtu.be/gxEPV4kolz0,Official music video
 0020-01,Piano Man,Billy Joel,Piano Solo,https://www.sheetmusicplus.com/title/22036500,2021-05-20,https://youtu.be/49ZIuQjl1HI,C major,C major,,https://youtu.be/gxEPV4kolz0,Official music video
 0020-02,Piano Man,Billy Joel,Easy Piano,https://www.sheetmusicplus.com/title/22036501,2021-05-20,https://youtu.be/LFiXZashPO4,C major,C major,"It could be a bit challenging for beginners, but you can enjoy the riffs similar to the original's!",https://youtu.be/gxEPV4kolz0,Official music video
@@ -36,7 +36,7 @@ id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url
 0016-02,Save Your Tears,The Weeknd,Easy Piano,https://www.sheetmusicplus.com/title/22006937,2021-04-09,https://youtu.be/pQKK0BihNoA,C major,C major,,https://youtu.be/XXYlFuWEuKI,Official music video
 0008-01,Someone Like You,Adele,Piano Solo,https://www.sheetmusicplus.com/title/22006353,2021-04-08,https://youtu.be/xdjvlryjcQQ,A major,A major,,https://youtu.be/hLQl3WQQoQ0,Official music video
 0008-02,Someone Like You,Adele,Easy Piano,https://www.sheetmusicplus.com/title/22006354,2021-04-08,https://youtu.be/y0onxLUK3aU,C major,A major,,https://youtu.be/hLQl3WQQoQ0,Official music video
-0008-03,Someone Like You,Adele,Piano Solo (bossa nova),https://www.sheetmusicplus.com/title/22006355,2021-04-08,https://youtu.be/CRHvtroR20s,D major,A major,Why not try a new style for one of the best ballads of all time.. :),https://youtu.be/hLQl3WQQoQ0,Official music video
+0008-03,Someone Like You,Adele,Piano Solo (Bossa Nova),https://www.sheetmusicplus.com/title/22006355,2021-04-08,https://youtu.be/CRHvtroR20s,D major,A major,Why not try a new style for one of the best ballads of all time.. :),https://youtu.be/hLQl3WQQoQ0,Official music video
 0015-01,A Thousand Years,Christina Perri,Piano Solo,https://www.sheetmusicplus.com/title/22005699,2021-04-07,https://youtu.be/ah2R5Vq9Aqc,B-flat major,B-flat major,,https://youtu.be/rtOvBOTyX00,Official music video
 0015-02,A Thousand Years,Christina Perri,Easy Piano,https://www.sheetmusicplus.com/title/22005701,2021-04-07,https://youtu.be/3cFk6bQDcVk,C major,B-flat major,,https://youtu.be/rtOvBOTyX00,Official music video
 0014-01,Say Something,A Great Big World,Piano Solo,https://www.sheetmusicplus.com/title/22004738,2021-04-05,https://youtu.be/hiDEDpHQCKE,D major,D major,,https://youtu.be/-2U0Ivkn2Ds,Official music video
@@ -73,3 +73,4 @@ id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url
 0004-02,Perfect,Ed Sheeran,Easy Piano,https://www.sheetmusicplus.com/title/21987087,2021-03-01,https://youtu.be/YXEwr4zTH9s,G major,A-flat major,,https://youtu.be/2Vv-BfVoq4g,Official music video
 0003-01,Willow,Taylor Swift,Piano Solo,https://www.sheetmusicplus.com/title/21987077,2021-03-01,https://youtu.be/M6wVqSUep90,G major,G major,,https://youtu.be/RsEZmictANA,Official music video
 0003-02,Willow,Taylor Swift,Easy Piano,https://www.sheetmusicplus.com/title/21987084,2021-03-01,https://youtu.be/a7q08N-aRrc,G major,G major,,https://youtu.be/RsEZmictANA,Official music video
+0020-03,Piano Man,Billy Joel,Piano Solo (Quiet ver.),,,https://youtu.be/gS9uXq0pWAU,C major,C major,,https://youtu.be/gxEPV4kolz0,Official music video
