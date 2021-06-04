@@ -19,7 +19,7 @@ body {
   line-height: 1.6;
   margin: 0 auto;
   padding: 1em;
-  max-width: 40em;
+  max-width: 60em;
   word-break: normal;
 }
 
@@ -217,4 +217,14 @@ td {
 
 .filtered {
   display: none !important;
+}
+
+.sheet-list {
+  column-gap: 3em;
+  columns: 20em 2;
+}
+
+.sheet-list li {
+  break-inside: avoid;
+  page-break-inside: avoid;
 }

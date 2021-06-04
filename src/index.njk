@@ -34,7 +34,7 @@ title: Search sheet music
 </section>
 <section>
 	<p id="nomatch" style="display: none;">No match found. Sorry!</p>
-	<ul id="sheet-list">
+	<ul id="sheet-list" class="sheet-list">
 	  {%- for sheet in collections.sheet -%}
 	  {%- if sheet.data.publishDate -%}
 	  <li data-kw="{{ sheet.data.keyword }}" data-f="{{ sheet.data.filters }}" data-pd="{{ sheet.data.publishDate | replace('-', '') }}">
