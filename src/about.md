@@ -33,7 +33,7 @@ Unlike the advanced versions, I carefully choose the notes to be as simple as po
 
 But sometimes I'm not sure what makes it easier for the beginners, or if the melodies are simplified too much, etc. Feedbacks help it, so I appreciate comments on YouTube videos or social media postings to improve my easy versions :)
 
-## Support
+## Support Sheeteria
 
 I'm accepting donations at <a href="https://www.buymeacoffee.com/sheeteria" target="_blank" rel="noreferrer" data-label="buymeacoffee-about">Buy Me a Coffee page</a>. It doesn't require you to register to donate, and accepts donations from a dollar.
 
