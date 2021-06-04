@@ -3,13 +3,17 @@ document.addEventListener('DOMContentLoaded', function() {
   sheets = document.querySelectorAll('#sheet-list li');
   noMatchMsg = document.getElementById('nomatch');
 
+  // For some browsers save previous inputs
+  searchSheets(document.getElementById('keyword').value);
+  updateFilters();
+  sortSheets();
+
   /**
    * Toggle filter.
    */
   document.querySelectorAll('[name^="filter-"]').forEach(function(input) {
     input.addEventListener('change', function(e) {
       updateFilters();
-      filterSheets();
     });
   });
 
@@ -18,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
    */
   document.querySelectorAll('[name="sort').forEach(function(input) {
     input.addEventListener('change', function(e) {
-      sortSheets(e.currentTarget.value);
+      sortSheets();
     });
   });
 });
@@ -52,6 +56,8 @@ function updateFilters() {
       filters.push(input.value);
     }
   });
+
+  filterSheets();
 }
 
 /**
@@ -71,7 +77,8 @@ function filterSheets() {
  * Sort sheet list.
  * Function reference: https://www.w3schools.com/howto/howto_js_sort_list.asp
  */
-function sortSheets(key) {
+function sortSheets() {
+  var key = document.querySelector('[name="sort"]:checked').value;
   var sorting = true, shouldSwitch = false, i;
 
   while (sorting) {
