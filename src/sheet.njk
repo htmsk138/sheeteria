@@ -9,7 +9,7 @@ pagination:
   alias: sheet
 permalink: "/sheet/{{ sheet.id | lower | replace('-', '/') }}/index.html"
 eleventyComputed:
-  title: "{{ sheet.style if sheet.style == 'Lead Sheet' else sheet.style + ' Sheet Music' | safe }} for {{ sheet.artist | safe }}'s {{ sheet.title | safe }}"
+  title: "{{ sheet.title | safe }} ({{ sheet.artist | safe }}) - {{ sheet.style if sheet.style == 'Lead Sheet' else sheet.style + ' Sheet Music' | safe }}"
   displayTitle: "{{ sheet.title | safe }} ({{ sheet.artist | safe }}) - {{ sheet.style | safe }}"
   keyword: "{{ sheet.title | lower }} {{ sheet.artist | lower }}"
   description: "{{ sheet.style if sheet.style == 'Lead Sheet' else sheet.style + ' Sheet Music' | safe }} for {{ sheet.artist | safe }}'s {{ sheet.title | safe }}"
