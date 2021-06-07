@@ -43,7 +43,7 @@ eleventyComputed:
           Style
         </th>
         <td>
-          {{ sheet.style }}{{ ' (melody and chords)' if 'Lead Sheet' == sheet.style }}
+          {{ sheet.style }}{{ ' (melody, chords and lyrics)' if 'Lead Sheet' == sheet.style }}
         </td>
       </tr>
       {%- if 'Lead Sheet' != sheet.style -%}
