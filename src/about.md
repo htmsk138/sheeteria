@@ -35,6 +35,6 @@ But sometimes I'm not sure what makes it easier for the beginners, or if the mel
 
 ## Support Sheeteria
 
-I'm accepting donations at <a href="https://www.buymeacoffee.com/sheeteria" target="_blank" rel="noreferrer" data-label="buymeacoffee-about">Buy Me a Coffee page</a>. It doesn't require you to register to donate, and accepts donations from a dollar.
+I'm accepting donations at <a href="https://www.buymeacoffee.com/sheeteria" target="_blank" rel="noreferrer" data-label="buymeacoffee-about">Buy Me a Coffee page</a>. It doesn't require you to register to donate, and accepts donations starting from a dollar.
 
 If you enjoy what I create, your $1 really helps and encourages me to keep it going. Thank you very much!
