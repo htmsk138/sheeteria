@@ -1,4 +1,7 @@
 id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url,org_type
+0028-00,The Boxer,Simon & Garfunkel,Lead Sheet,https://www.sheetmusicplus.com/title/22047267,2021-06-11,,B major,B major,,https://youtu.be/l3LFML_pxlY,Official audio
+0028-01,The Boxer,Simon & Garfunkel,Piano Solo,https://www.sheetmusicplus.com/title/22047268,2021-06-11,https://youtu.be/dLM2pnCLfCw,E major,B major,,https://youtu.be/l3LFML_pxlY,Official audio
+0028-02,The Boxer,Simon & Garfunkel,Easy Piano,https://www.sheetmusicplus.com/title/22047270,2021-06-11,https://youtu.be/UsFCQOqwQNk,C major,B major,,https://youtu.be/l3LFML_pxlY,Official audio
 0027-00,Pareja del Año,"Sebastián Yatra, Myke Towers",Lead Sheet,https://www.sheetmusicplus.com/title/22045755,2021-06-10,,C major,C major,,https://youtu.be/SRm2Ch4oFWs,Official music video
 0027-01,Pareja del Año,"Sebastián Yatra, Myke Towers",Piano Solo,https://www.sheetmusicplus.com/title/22045756,2021-06-10,https://youtu.be/GtKxYKRWCHM,C major,C major,,https://youtu.be/SRm2Ch4oFWs,Official music video
 0027-02,Pareja del Año,"Sebastián Yatra, Myke Towers",Easy Piano,https://www.sheetmusicplus.com/title/22045757,2021-06-10,https://youtu.be/-Frl9aqQHY0,C major,C major,,https://youtu.be/SRm2Ch4oFWs,Official music video
@@ -92,6 +95,3 @@ id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url
 0004-02,Perfect,Ed Sheeran,Easy Piano,https://www.sheetmusicplus.com/title/21987087,2021-03-01,https://youtu.be/YXEwr4zTH9s,G major,A-flat major,,https://youtu.be/2Vv-BfVoq4g,Official music video
 0003-01,Willow,Taylor Swift,Piano Solo,https://www.sheetmusicplus.com/title/21987077,2021-03-01,https://youtu.be/M6wVqSUep90,G major,G major,,https://youtu.be/RsEZmictANA,Official music video
 0003-02,Willow,Taylor Swift,Easy Piano,https://www.sheetmusicplus.com/title/21987084,2021-03-01,https://youtu.be/a7q08N-aRrc,G major,G major,,https://youtu.be/RsEZmictANA,Official music video
-0028-00,The Boxer,Simon & Garfunkel,Lead Sheet,,,,B major,B major,,https://youtu.be/l3LFML_pxlY,Official audio
-0028-01,The Boxer,Simon & Garfunkel,Piano Solo,,,https://youtu.be/dLM2pnCLfCw,E major,B major,,https://youtu.be/l3LFML_pxlY,Official audio
-0028-02,The Boxer,Simon & Garfunkel,Easy Piano,,,https://youtu.be/UsFCQOqwQNk,C major,B major,,https://youtu.be/l3LFML_pxlY,Official audio
