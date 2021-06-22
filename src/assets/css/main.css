@@ -74,10 +74,6 @@ main {
   padding: 2em 0;
 }
 
-main > section:not(:last-child) {
-  margin: 0 0 2em;
-}
-
 h1 {
   color: var(--accent-color1);
   font-size: 32px;
@@ -101,14 +97,8 @@ h3 {
 }
 
 .site-title img {
-  max-width: 70vw;
-}
-
-.site-description {
-  line-height: 1.2;
-  margin: 0 0 3em;
-  opacity: .7;
-  text-align: center;
+  max-width: 300px;
+  width: 70vw;
 }
 
 nav ul {
@@ -154,8 +144,21 @@ input[type=text] {
   font-size: inherit;
   padding: .5em .8em;
   margin: 0 auto;
-  max-width: 90vw;
-  width: 20em;
+  max-width: 20em;
+  width: 100%;
+}
+
+fieldset {
+  border: 1px dashed;
+  margin: 0 auto;
+}
+
+legend {
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 0 .5em;
+  text-align: center;
 }
 
 .btn {
@@ -223,6 +226,7 @@ td {
 .sheet-list {
   column-gap: 3em;
   columns: 20em 2;
+  margin: 2em 0;
 }
 
 .sheet-list li {

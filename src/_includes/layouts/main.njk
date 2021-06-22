@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ title }} | {{ metadata.title }}</title>
+    <title>{{ title }} | {{ metadata.title }} - {{ metadata.description }}</title>
     <meta name="description" content="{{ description or metadata.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,11 +19,8 @@
     <header>
       <p class="site-title">
         <a href="{{ '/' | url }}">
-          <img src="{{ '/assets/img/logo.png' | url }}" srcset="{{ '/assets/img/logo@2x.png' | url }} 2x" alt="Sheeteria">
+          <img src="{{ '/assets/img/logo.png' | url }}" srcset="{{ '/assets/img/logo@2x.png' | url }} 2x" alt="{{ metadata.title }} - {{ metadata.description }}">
         </a>
-      </p>
-      <p class="site-description">
-        {{ metadata.description }}
       </p>
       <nav>
         <ul>

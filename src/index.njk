@@ -1,9 +1,15 @@
 ---
 layout: layouts/main
-title: Search sheet music
+title: Home
 ---
-<h1>Search Sheet Music</h1>
-<section>
+<h1>Welcome</h1>
+<p>
+	Hello and welcome! This is Hitomi Seki's website introducing her piano arrangement works. They are written for wide range of piano players from beginner to advanced and sheet music is digitally available for every one of them! Most of the arrangements are for well-known popular songs, I hope you find your favourite song from the list below. Enjoy!
+</p>
+<br><br>
+<h2 class="sr-only">Sheet music list</h2>
+<fieldset>
+	<legend>Search sheet music</legend>
 	<p>
 	  <input id="keyword" type="text" placeholder="Song title or artist name" onkeyup="searchSheets(this.value)" aria-label="Search by song title or artist name">
 	</p>
@@ -31,23 +37,21 @@ title: Search sheet music
 			</tr>
 		</tbody>
 	</table>
-</section>
-<section>
-	<p id="nomatch" style="display: none;">No match found. Sorry!</p>
-	<ul id="sheet-list" class="sheet-list">
-	  {%- for sheet in collections.sheet -%}
-	  {%- if sheet.data.publishDate -%}
-	  <li data-kw="{{ sheet.data.keyword }}" data-f="{{ sheet.data.filters }}" data-pd="{{ sheet.data.publishDate | replace('-', '') }}">
-	    <a href="{{ sheet.url }}">
-	      {{ sheet.data.displayTitle }}
-	    </a>
-	  </li>
-	  {%- endif -%}
-	  {%- endfor -%}
-	</ul>
-	{%- if 'production' === app.env -%}
-	<script src="{{ '/assets/js/sheets.min.js' | url }}?v=20210520"></script>
-	{%- else -%}
-	<script src="{{ '/assets/js/sheets.js' | url }}"></script>
-	{%- endif -%}
-</section>
+</fieldset>
+<p id="nomatch" style="display: none;">No match found. Sorry!</p>
+<ul id="sheet-list" class="sheet-list">
+  {%- for sheet in collections.sheet -%}
+  {%- if sheet.data.publishDate -%}
+  <li data-kw="{{ sheet.data.keyword }}" data-f="{{ sheet.data.filters }}" data-pd="{{ sheet.data.publishDate | replace('-', '') }}">
+    <a href="{{ sheet.url }}">
+      {{ sheet.data.displayTitle }}
+    </a>
+  </li>
+  {%- endif -%}
+  {%- endfor -%}
+</ul>
+{%- if 'production' === app.env -%}
+<script src="{{ '/assets/js/sheets.min.js' | url }}?v=20210520"></script>
+{%- else -%}
+<script src="{{ '/assets/js/sheets.js' | url }}"></script>
+{%- endif -%}
