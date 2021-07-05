@@ -105,3 +105,9 @@ id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url
 0004-02,Perfect,Ed Sheeran,Easy Piano,https://www.sheetmusicplus.com/title/21987087,2021-03-01,https://youtu.be/YXEwr4zTH9s,G major,A-flat major,,https://youtu.be/2Vv-BfVoq4g,Official music video
 0003-01,Willow,Taylor Swift,Piano Solo,https://www.sheetmusicplus.com/title/21987077,2021-03-01,https://youtu.be/M6wVqSUep90,G major,G major,,https://youtu.be/RsEZmictANA,Official music video
 0003-02,Willow,Taylor Swift,Easy Piano,https://www.sheetmusicplus.com/title/21987084,2021-03-01,https://youtu.be/a7q08N-aRrc,G major,G major,,https://youtu.be/RsEZmictANA,Official music video
+002D-00,The Scientist,Coldplay,Lead Sheet,,,,F major,F major,,https://youtu.be/RB-RcX5DS5A,Official music video
+002D-01,The Scientist,Coldplay,Piano Solo,,,https://youtu.be/pye0yBQRGr4,F major,F major,,https://youtu.be/RB-RcX5DS5A,Official music video
+002D-02,The Scientist,Coldplay,Easy Piano,,,https://youtu.be/TdfF4eVG-SE,F major,F major,,https://youtu.be/RB-RcX5DS5A,Official music video
+002C-00,Your Song,Elton John,Lead Sheet,,,,E-flat major,E-flat major,,https://youtu.be/FT3D1Cu6g10,Official audio
+002C-01,Your Song,Elton John,Piano Solo,,,https://youtu.be/_MvWZclnzZM,B-flat major,E-flat major,,https://youtu.be/FT3D1Cu6g10,Official audio
+002C-02,Your Song,Elton John,Easy Piano,,,https://youtu.be/FaJuvbBAkY4,F major,E-flat major,,https://youtu.be/FT3D1Cu6g10,Official audio
