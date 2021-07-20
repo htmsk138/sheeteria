@@ -1,4 +1,7 @@
 id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url,org_type
+002D-02,The Scientist,Coldplay,Easy Piano,https://www.musicnotes.com/l/vvMMb,2021-07-20,https://youtu.be/TdfF4eVG-SE,F major,F major,,https://youtu.be/RB-RcX5DS5A,Official music video
+002D-00,The Scientist,Coldplay,Lead Sheet,https://www.musicnotes.com/l/B2MMq,2021-07-20,,F major,F major,,https://youtu.be/RB-RcX5DS5A,Official music video
+002C-02,Your Song,Elton John,Easy Piano,https://www.musicnotes.com/l/52MMZ,2021-07-20,https://youtu.be/FaJuvbBAkY4,F major,E-flat major,,https://youtu.be/FT3D1Cu6g10,Official audio
 002D-01,The Scientist,Coldplay,Piano Solo,https://www.musicnotes.com/l/nRMMm,2021-07-15,https://youtu.be/pye0yBQRGr4,F major,F major,,https://youtu.be/RB-RcX5DS5A,Official music video
 002C-01,Your Song,Elton John,Piano Solo,https://www.musicnotes.com/l/9zMMW,2021-07-14,https://youtu.be/_MvWZclnzZM,B-flat major,E-flat major,,https://youtu.be/FT3D1Cu6g10,Official audio
 002B-02,Thinking Out Loud,Ed Sheeran,Easy Piano,https://www.sheetmusicplus.com/title/22050838,2021-06-18,https://youtu.be/0EHQz_JTPw8,C major,D major,,https://youtu.be/lp-EO5I60KA,Official music video
@@ -113,7 +116,4 @@ id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url
 002E-02,Forever After All,Luke Combs,Easy Piano,,,https://youtu.be/VLZOAKTEv3M,C major,C major,,https://youtu.be/TDpOcp98b5k,Official music video
 002E-01,Forever After All,Luke Combs,Piano Solo,,,https://youtu.be/PjqO07H_e1s,C major,C major,,https://youtu.be/TDpOcp98b5k,Official music video
 002E-00,Forever After All,Luke Combs,Lead Sheet,,,,C major,C major,,https://youtu.be/TDpOcp98b5k,Official music video
-002D-02,The Scientist,Coldplay,Easy Piano,,,https://youtu.be/TdfF4eVG-SE,F major,F major,,https://youtu.be/RB-RcX5DS5A,Official music video
-002D-00,The Scientist,Coldplay,Lead Sheet,,,,F major,F major,,https://youtu.be/RB-RcX5DS5A,Official music video
-002C-02,Your Song,Elton John,Easy Piano,,,https://youtu.be/FaJuvbBAkY4,F major,E-flat major,,https://youtu.be/FT3D1Cu6g10,Official audio
 002C-00,Your Song,Elton John,Lead Sheet,,,,E-flat major,E-flat major,,https://youtu.be/FT3D1Cu6g10,Official audio
