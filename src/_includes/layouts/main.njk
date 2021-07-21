@@ -5,6 +5,8 @@
     <title>{{ title }} | {{ metadata.title }} - {{ metadata.description }}</title>
     <meta name="description" content="{{ description or metadata.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="icon.png">
+
 
     {%- if 'production' === app.env -%}
     <link rel="stylesheet" href="{{ '/assets/css/main.min.css?v=20210517' | url}}">
