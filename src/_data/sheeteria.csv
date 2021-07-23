@@ -1,4 +1,5 @@
 id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url,org_type
+002E-01,Forever After All,Luke Combs,Piano Solo,https://www.musicnotes.com/l/ccMMq,2021-07-22,https://youtu.be/PjqO07H_e1s,C major,C major,,https://youtu.be/TDpOcp98b5k,Official music video
 002C-00,Your Song,Elton John,Lead Sheet,https://www.musicnotes.com/l/37MMZ,2021-07-21,,E-flat major,E-flat major,,https://youtu.be/FT3D1Cu6g10,Official audio
 002D-02,The Scientist,Coldplay,Easy Piano,https://www.musicnotes.com/l/vvMMb,2021-07-20,https://youtu.be/TdfF4eVG-SE,F major,F major,,https://youtu.be/RB-RcX5DS5A,Official music video
 002D-00,The Scientist,Coldplay,Lead Sheet,https://www.musicnotes.com/l/B2MMq,2021-07-20,,F major,F major,,https://youtu.be/RB-RcX5DS5A,Official music video
@@ -115,5 +116,4 @@ id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url
 002F-01,Todo de Ti,Rauw Alejandro,Piano Solo,,,https://youtu.be/Boo2dD9NDLo,D major,F-sharp major,,https://youtu.be/CFPLIaMpGrY,Official music video
 002F-00,Todo de Ti,Rauw Alejandro,Lead Sheet,,,,F-sharp major,F-sharp major,,https://youtu.be/CFPLIaMpGrY,Official music video
 002E-02,Forever After All,Luke Combs,Easy Piano,,,https://youtu.be/VLZOAKTEv3M,C major,C major,,https://youtu.be/TDpOcp98b5k,Official music video
-002E-01,Forever After All,Luke Combs,Piano Solo,,,https://youtu.be/PjqO07H_e1s,C major,C major,,https://youtu.be/TDpOcp98b5k,Official music video
 002E-00,Forever After All,Luke Combs,Lead Sheet,,,,C major,C major,,https://youtu.be/TDpOcp98b5k,Official music video
