@@ -234,3 +234,10 @@ td {
   break-inside: avoid;
   page-break-inside: avoid;
 }
+
+.new {
+  color: red;
+  font-size: 80%;
+  font-weight: bold;
+  margin-left: .5em;
+}

@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
   sheets = document.querySelectorAll('#sheet-list li');
   noMatchMsg = document.getElementById('nomatch');
 
+  // Display NEW labels
+  displayNew();
+
   // For some browsers save previous inputs
   searchSheets(document.getElementById('keyword').value);
   updateFilters();
@@ -135,4 +138,25 @@ function trackSearch() {
       'transport_type': 'beacon',
     });
   }
+}
+
+/**
+ * Display NEW label on products published within specified amount of days.
+ */
+function displayNew() {
+  // Get date from X days ago and format to YYYYMMDD string
+  var newDays = 7;
+  var aWeekAgo = new Date(Date.now() - (1000 * 60 * 60 * 24) * newDays);
+  var aWeekAgoStr = aWeekAgo.toISOString().slice(0,10).replace(/-/g,"");
+
+  // NEW label element to display
+  var newLabel = document.createElement('span');
+  newLabel.classList.add('new');
+  newLabel.innerHTML = 'NEW';
+
+  sheets.forEach(function(item) {
+    if (item.dataset.pd > aWeekAgoStr) {
+      item.appendChild(newLabel.cloneNode(true));
+    }
+  });
 }
