@@ -10,10 +10,10 @@ eleventyComputed:
   description: "All Sheet Music for {{ song.artist | safe }}'s {{ song.title | safe }}"
 ---
 <article>
-  <h1>{{ song.title }}</h1>
-  <p>
-    By {{ song.artist }}
-  </p>
+  <h1>
+    {{- song.title -}}<br>
+    ({{- song.artist -}})
+  </h1>
   <ul>
     {%- for id, style in song.sheetList -%}
     <li>

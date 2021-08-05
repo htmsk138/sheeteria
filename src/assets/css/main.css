@@ -16,7 +16,7 @@ body {
 	font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
-  line-height: 1.6;
+  line-height: 1.8;
   margin: 0 auto;
   padding: 1em;
   max-width: 60em;
@@ -31,6 +31,7 @@ img {
 a,
 a:visited {
   color: inherit;
+  padding: .3em 0;
   text-decoration: underline;
 }
 

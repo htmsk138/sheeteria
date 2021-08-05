@@ -17,35 +17,18 @@ eleventyComputed:
   publishDate: "{{ sheet.published_on }}"
 ---
 <article class="sheet-detail">
-  <h1>{{ sheet.title }}</h1>
+  <h1>
+    {{- sheet.title -}}<br>
+    ({{- sheet.artist -}})<br>
+    {{- sheet.style -}}
+  </h1>
   {%- if sheet.youtube -%}
   <p>
     <iframe width="442" height="250" src="https://www.youtube.com/embed/{{ sheet.youtube | replace('https://youtu.be/', '') }}" title="{{ sheet.title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </p>
-  {%- if ('Easy Piano' == sheet.style) -%}
-  <p>
-    <a href="{{ sheet.youtube }}" target="_blank" rel="noreferrer" data-label="watch_{{ sheet.id }}">Watch Synthesia tutorial on YouTube</a>
-  </p>
-  {%- endif -%}
   {%- endif -%}
   <table>
     <tbody>
-      <tr>
-        <th>
-          Artist
-        </th>
-        <td>
-          {{ sheet.artist }}
-        </td>
-      </tr>
-      <tr>
-        <th>
-          Style
-        </th>
-        <td>
-          {{ sheet.style }}{{ ' (melody, chords and lyrics)' if 'Lead Sheet' == sheet.style }}
-        </td>
-      </tr>
       {%- if 'Lead Sheet' != sheet.style -%}
       <tr>
         <th>
@@ -56,7 +39,6 @@ eleventyComputed:
         </td>
       </tr>
       {%- endif -%}
-      {%- if sheet.published_on -%}
       <tr>
         <th>
           Key
@@ -65,9 +47,10 @@ eleventyComputed:
           {{ sheet.key }} (original: {{ sheet.org_key }})
         </td>
       </tr>
+      {%- if sheet.published_on -%}
       <tr>
         <th>
-          Published
+          Published on
         </th>
         <td>
           {{ sheet.published_on.slice(0, 10) }}
