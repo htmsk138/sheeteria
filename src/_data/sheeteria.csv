@@ -1,4 +1,5 @@
 id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url,org_type
+0031-02,Our Last Summer,Abba,Easy Piano,https://www.musicnotes.com/l/7MNMZ,2021-08-17,https://youtu.be/48Gt9TMOoxE,C major,D major,,https://youtu.be/xm3s1sANRDE,Official audio
 0030-02,Without You,Mariah Carey,Easy Piano,https://www.musicnotes.com/l/gThMn,2021-08-15,https://youtu.be/ybZuyUqCzMQ,C major,F-sharp major,,https://youtu.be/6VY8ZxcDh1s,Official audio
 002E-00,Forever After All,Luke Combs,Lead Sheet,https://www.musicnotes.com/l/MMhMb,2021-07-28,,C major,C major,,https://youtu.be/TDpOcp98b5k,Official music video
 002F-02,Todo de Ti,Rauw Alejandro,Easy Piano,https://www.musicnotes.com/l/rBMMb,2021-07-27,https://youtu.be/tlqjZbQQADw,C major,F-sharp major,,https://youtu.be/CFPLIaMpGrY,Official music video
@@ -18,7 +19,7 @@ id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url
 002A-03,Just The Way You Are,Bruno Mars,Piano Solo (Tender ver.),https://www.musicnotes.com/l/hfhMX,2021-06-16,https://youtu.be/t1sfGjZFVno,F major,F major,,https://youtu.be/LjhCEhWiKXk,Official music video
 002A-02,Just The Way You Are,Bruno Mars,Easy Piano,https://www.musicnotes.com/l/fxhMm,2021-06-16,https://youtu.be/76JnKBXIsKE,C major,F major,,https://youtu.be/LjhCEhWiKXk,Official music video
 002A-01,Just The Way You Are,Bruno Mars,Piano Solo,https://www.musicnotes.com/l/hBhMX,2021-06-16,https://youtu.be/6w_P6fF9MoA,F major,F major,,https://youtu.be/LjhCEhWiKXk,Official music video
-002A-00,Just The Way You Are,Bruno Mars,Lead Sheet,https://www.sheetmusicplus.com/title/22049398,2021-06-16,,F major,F major,,https://youtu.be/LjhCEhWiKXk,Official music video
+002A-00,Just The Way You Are,Bruno Mars,Lead Sheet,https://www.musicnotes.com/l/vMNMq,2021-06-16,,F major,F major,,https://youtu.be/LjhCEhWiKXk,Official music video
 0029-02,Perfect To Me,Anne Marie,Easy Piano,https://www.musicnotes.com/l/jlhM4,2021-06-12,https://youtu.be/WAwxyZycB8w,G major,A-flat major,,https://youtu.be/2FtFwAaCjrM,Official music video
 0029-01,Perfect To Me,Anne Marie,Piano Solo,https://www.musicnotes.com/l/5LhM4,2021-06-12,https://youtu.be/W9kckYUsFAQ,A-flat major,A-flat major,,https://youtu.be/2FtFwAaCjrM,Official music video
 0029-00,Perfect To Me,Anne Marie,Lead Sheet,https://www.musicnotes.com/l/4xhMn,2021-06-12,,A-flat major,A-flat major,,https://youtu.be/2FtFwAaCjrM,Official music video
@@ -26,7 +27,7 @@ id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url
 0028-01,The Boxer,Simon & Garfunkel,Piano Solo,https://www.sheetmusicplus.com/title/22047268,2021-06-11,https://youtu.be/dLM2pnCLfCw,E major,B major,,https://youtu.be/l3LFML_pxlY,Official audio
 0028-00,The Boxer,Simon & Garfunkel,Lead Sheet,https://www.sheetmusicplus.com/title/22047267,2021-06-11,,B major,B major,,https://youtu.be/l3LFML_pxlY,Official audio
 0027-02,Pareja del Año,"Sebastián Yatra, Myke Towers",Easy Piano,https://www.musicnotes.com/l/lxhMb,2021-06-10,https://youtu.be/-Frl9aqQHY0,C major,C major,,https://youtu.be/SRm2Ch4oFWs,Official music video
-0027-01,Pareja del Año,"Sebastián Yatra, Myke Towers",Piano Solo,https://www.sheetmusicplus.com/title/22045756,2021-06-10,https://youtu.be/GtKxYKRWCHM,C major,C major,,https://youtu.be/SRm2Ch4oFWs,Official music video
+0027-01,Pareja del Año,"Sebastián Yatra, Myke Towers",Piano Solo,https://www.musicnotes.com/l/2BhMS,2021-06-10,https://youtu.be/GtKxYKRWCHM,C major,C major,,https://youtu.be/SRm2Ch4oFWs,Official music video
 0027-00,Pareja del Año,"Sebastián Yatra, Myke Towers",Lead Sheet,https://www.musicnotes.com/l/NfhMm,2021-06-10,,C major,C major,,https://youtu.be/SRm2Ch4oFWs,Official music video
 0026-00,Darkside,Alan Walker Ft. Au/Ra & Tomine Harket,Lead Sheet,https://www.musicnotes.com/l/tlhMX,2021-06-04,,E minor,E minor,,https://youtu.be/M-P4QBt-FWw,Official music video
 0025-00,Take Me To Church,Hozier,Lead Sheet,https://www.musicnotes.com/l/rfhMQ,2021-06-04,,E minor,E minor,,https://youtu.be/PVjiKRfKpPI,Official music video
@@ -35,24 +36,24 @@ id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url
 0025-02,Take Me To Church,Hozier,Easy Piano,https://www.musicnotes.com/l/DxhMP,2021-06-03,https://youtu.be/UweZxvug1mc,E minor,E minor,Watch out for the time signature changes..there's a lot!,https://youtu.be/PVjiKRfKpPI,Official music video
 0025-01,Take Me To Church,Hozier,Piano Solo,https://www.musicnotes.com/l/KfhMP,2021-06-03,https://youtu.be/MnXV2A3-eVo,B minor,E minor,,https://youtu.be/PVjiKRfKpPI,Official music video
 0024-02,The Winner Takes It All,Abba,Easy Piano,https://www.musicnotes.com/l/RHhMm,2021-06-01,https://youtu.be/Ny3U6k0cQsE,C major,F-sharp major,,https://youtu.be/92cwKCU8Z5c,Official music video
-0024-01,The Winner Takes It All,Abba,Piano Solo,https://www.sheetmusicplus.com/title/22042926,2021-06-01,https://youtu.be/Dy4RY1WZ7EU,F-sharp major,F-sharp major,,https://youtu.be/92cwKCU8Z5c,Official music video
+0024-01,The Winner Takes It All,Abba,Piano Solo,https://www.musicnotes.com/l/zhNMn,2021-06-01,https://youtu.be/Dy4RY1WZ7EU,F-sharp major,F-sharp major,,https://youtu.be/92cwKCU8Z5c,Official music video
 0024-00,The Winner Takes It All,Abba,Lead Sheet,https://www.sheetmusicplus.com/title/22042925,2021-06-01,,F-sharp major,F-sharp major,,https://youtu.be/92cwKCU8Z5c,Official music video
 0023-02,Shape Of My Heart,Backstreet Boys,Easy Piano,https://www.musicnotes.com/l/hxhMS,2021-05-31,https://youtu.be/vF0M8iqB9rk,G major,E major,,https://youtu.be/OT5msu-dap8,Official music video
 0023-01,Shape Of My Heart,Backstreet Boys,Piano Solo,https://www.sheetmusicplus.com/title/22042692,2021-05-31,https://youtu.be/Ab-xTPWkNlw,E major,E major,,https://youtu.be/OT5msu-dap8,Official music video
 0023-00,Shape Of My Heart,Backstreet Boys,Lead Sheet,https://www.sheetmusicplus.com/title/22042690,2021-05-31,,E major,E major,,https://youtu.be/OT5msu-dap8,Official music video
 0022-02,Runaway,Aurora,Easy Piano,https://www.musicnotes.com/l/MxhMq,2021-05-28,https://youtu.be/nWfaBlrBWkE,F major,B major,,https://youtu.be/d_HlPboLRL8,Official music video
-0022-01,Runaway,Aurora,Piano Solo,https://www.sheetmusicplus.com/title/22041831,2021-05-28,https://youtu.be/wYfgiZldTl0,B major,B major,I admit it..the rhythms are pretty tricky! Good luck!,https://youtu.be/d_HlPboLRL8,Official music video
+0022-01,Runaway,Aurora,Piano Solo,https://www.musicnotes.com/l/2MNMF,2021-05-28,https://youtu.be/wYfgiZldTl0,B major,B major,I admit it..the rhythms are pretty tricky! Good luck!,https://youtu.be/d_HlPboLRL8,Official music video
 0022-00,Runaway,Aurora,Lead Sheet,https://www.sheetmusicplus.com/title/22041830,2021-05-28,,B major,B major,,https://youtu.be/d_HlPboLRL8,Official music video
 0020-03,Piano Man,Billy Joel,Piano Solo (Quiet ver.),https://www.sheetmusicplus.com/title/22041775,2021-05-28,https://youtu.be/gS9uXq0pWAU,C major,C major,,https://youtu.be/gxEPV4kolz0,Official music video
-0021-02,Holy,Justin Bieber Feat. Chance The Rapper,Easy Piano,https://www.sheetmusicplus.com/title/22037863,2021-05-21,https://youtu.be/WZ5RX8_W8xo,G major,F-sharp major,,https://youtu.be/pvPsJFRGleA,Official music video
+0021-02,Holy,Justin Bieber Feat. Chance The Rapper,Easy Piano,https://www.musicnotes.com/l/VMNMP,2021-05-21,https://youtu.be/WZ5RX8_W8xo,G major,F-sharp major,,https://youtu.be/pvPsJFRGleA,Official music video
 0021-01,Holy,Justin Bieber Feat. Chance The Rapper,Piano Solo,https://www.sheetmusicplus.com/title/22037862,2021-05-21,https://youtu.be/egdeGPVIHsc,F-sharp major,F-sharp major,,https://youtu.be/pvPsJFRGleA,Official music video
-0021-00,Holy,Justin Bieber Feat. Chance The Rapper,Lead Sheet,https://www.sheetmusicplus.com/title/22037859,2021-05-21,,F-sharp major,F-sharp major,,https://youtu.be/pvPsJFRGleA,Official music video
-0020-02,Piano Man,Billy Joel,Easy Piano,https://www.sheetmusicplus.com/title/22036501,2021-05-20,https://youtu.be/LFiXZashPO4,C major,C major,"It could be a bit challenging for beginners, but you can enjoy the riffs similar to the original's!",https://youtu.be/gxEPV4kolz0,Official music video
+0021-00,Holy,Justin Bieber Feat. Chance The Rapper,Lead Sheet,https://www.musicnotes.com/l/HMNMw,2021-05-21,,F-sharp major,F-sharp major,,https://youtu.be/pvPsJFRGleA,Official music video
+0020-02,Piano Man,Billy Joel,Easy Piano,https://www.musicnotes.com/l/7BhMn,2021-05-20,https://youtu.be/LFiXZashPO4,C major,C major,"It could be a bit challenging for beginners, but you can enjoy the riffs similar to the original's!",https://youtu.be/gxEPV4kolz0,Official music video
 0020-01,Piano Man,Billy Joel,Piano Solo,https://www.sheetmusicplus.com/title/22036500,2021-05-20,https://youtu.be/49ZIuQjl1HI,C major,C major,,https://youtu.be/gxEPV4kolz0,Official music video
 0020-00,Piano Man,Billy Joel,Lead Sheet,https://www.sheetmusicplus.com/title/22036499,2021-05-20,,C major,C major,,https://youtu.be/gxEPV4kolz0,Official music video
 001E-02,Ocean Eyes,Billie Eilish,Easy Piano,https://www.musicnotes.com/l/CxhM4,2021-05-15,https://youtu.be/j4kVHK2BbUw,E minor,E minor,,https://youtu.be/viimfQi_pUw,Official music video
 001E-01,Ocean Eyes,Billie Eilish,Piano Solo,https://www.musicnotes.com/l/TxhMJ,2021-05-15,https://youtu.be/-S0dmPzzagM,A minor,E minor,,https://youtu.be/viimfQi_pUw,Official music video
-001E-00,Ocean Eyes,Billie Eilish,Lead Sheet,https://www.sheetmusicplus.com/title/22032894,2021-05-15,,E minor,E minor,,https://youtu.be/viimfQi_pUw,Official music video
+001E-00,Ocean Eyes,Billie Eilish,Lead Sheet,https://www.musicnotes.com/l/kMNMW,2021-05-15,,E minor,E minor,,https://youtu.be/viimfQi_pUw,Official music video
 001F-02,You Are Not Alone,Michael Jackson,Easy Piano,https://www.musicnotes.com/l/gfhMX,2021-05-11,https://youtu.be/nxoBZn_LZTw,D major,E-flat major,,https://youtu.be/pAyKJAtDNCw,Official music video
 001F-01,You Are Not Alone,Michael Jackson,Piano Solo,https://www.sheetmusicplus.com/title/22031885,2021-05-11,https://youtu.be/yFL_uaNrsbI,E-flat major,E-flat major,,https://youtu.be/pAyKJAtDNCw,Official music video
 001F-00,You Are Not Alone,Michael Jackson,Lead Sheet,https://www.sheetmusicplus.com/title/22031884,2021-05-11,,E-flat major,E-flat major,,https://youtu.be/pAyKJAtDNCw,Official music video
@@ -120,7 +121,6 @@ id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url
 0003-01,Willow,Taylor Swift,Piano Solo,https://www.musicnotes.com/l/cRMMZ,2021-03-01,https://youtu.be/M6wVqSUep90,G major,G major,,https://youtu.be/RsEZmictANA,Official music video
 0032-02,"One Summer Day (From ""Spirited Away"")",Joe Hisaishi,Easy Piano,,,https://youtu.be/aFBbhS0IHE8,C major,C major,,https://music.youtube.com/watch?v=6f1vVBjftA4,Official audio
 0032-01,"One Summer Day (From ""Spirited Away"")",Joe Hisaishi,Piano Solo,,,https://youtu.be/D8pvbmd1s3A,C major,C major,,https://music.youtube.com/watch?v=6f1vVBjftA4,Official audio
-0031-02,Our Last Summer,Abba,Easy Piano,,,https://youtu.be/48Gt9TMOoxE,C major,D major,,https://youtu.be/xm3s1sANRDE,Official audio
 0031-01,Our Last Summer,Abba,Piano Solo,,,https://youtu.be/30ar5VXRxNI,D major,D major,,https://youtu.be/xm3s1sANRDE,Official audio
 0031-00,Our Last Summer,Abba,Lead Sheet,,,,D major,D major,,https://youtu.be/xm3s1sANRDE,Official audio
 0030-01,Without You,Mariah Carey,Piano Solo,,,https://youtu.be/vcDuxmO0Jr8,F-sharp major,F-sharp major,,https://youtu.be/6VY8ZxcDh1s,Official audio
