@@ -1,4 +1,6 @@
 id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url,org_type
+0031-01,Our Last Summer,Abba,Piano Solo,https://www.musicnotes.com/l/hNNMb,2021-08-18,https://youtu.be/30ar5VXRxNI,D major,D major,,https://youtu.be/xm3s1sANRDE,Official audio
+0031-00,Our Last Summer,Abba,Lead Sheet,https://www.musicnotes.com/l/NNNMS,2021-08-18,,D major,D major,,https://youtu.be/xm3s1sANRDE,Official audio
 0031-02,Our Last Summer,Abba,Easy Piano,https://www.musicnotes.com/l/7MNMZ,2021-08-17,https://youtu.be/48Gt9TMOoxE,C major,D major,,https://youtu.be/xm3s1sANRDE,Official audio
 0030-02,Without You,Mariah Carey,Easy Piano,https://www.musicnotes.com/l/gThMn,2021-08-15,https://youtu.be/ybZuyUqCzMQ,C major,F-sharp major,,https://youtu.be/6VY8ZxcDh1s,Official audio
 002E-00,Forever After All,Luke Combs,Lead Sheet,https://www.musicnotes.com/l/MMhMb,2021-07-28,,C major,C major,,https://youtu.be/TDpOcp98b5k,Official music video
@@ -46,7 +48,7 @@ id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url
 0022-00,Runaway,Aurora,Lead Sheet,https://www.sheetmusicplus.com/title/22041830,2021-05-28,,B major,B major,,https://youtu.be/d_HlPboLRL8,Official music video
 0020-03,Piano Man,Billy Joel,Piano Solo (Quiet ver.),https://www.sheetmusicplus.com/title/22041775,2021-05-28,https://youtu.be/gS9uXq0pWAU,C major,C major,,https://youtu.be/gxEPV4kolz0,Official music video
 0021-02,Holy,Justin Bieber Feat. Chance The Rapper,Easy Piano,https://www.musicnotes.com/l/VMNMP,2021-05-21,https://youtu.be/WZ5RX8_W8xo,G major,F-sharp major,,https://youtu.be/pvPsJFRGleA,Official music video
-0021-01,Holy,Justin Bieber Feat. Chance The Rapper,Piano Solo,https://www.sheetmusicplus.com/title/22037862,2021-05-21,https://youtu.be/egdeGPVIHsc,F-sharp major,F-sharp major,,https://youtu.be/pvPsJFRGleA,Official music video
+0021-01,Holy,Justin Bieber Feat. Chance The Rapper,Piano Solo,https://www.musicnotes.com/l/DhNM4,2021-05-21,https://youtu.be/egdeGPVIHsc,F-sharp major,F-sharp major,,https://youtu.be/pvPsJFRGleA,Official music video
 0021-00,Holy,Justin Bieber Feat. Chance The Rapper,Lead Sheet,https://www.musicnotes.com/l/HMNMw,2021-05-21,,F-sharp major,F-sharp major,,https://youtu.be/pvPsJFRGleA,Official music video
 0020-02,Piano Man,Billy Joel,Easy Piano,https://www.musicnotes.com/l/7BhMn,2021-05-20,https://youtu.be/LFiXZashPO4,C major,C major,"It could be a bit challenging for beginners, but you can enjoy the riffs similar to the original's!",https://youtu.be/gxEPV4kolz0,Official music video
 0020-01,Piano Man,Billy Joel,Piano Solo,https://www.sheetmusicplus.com/title/22036500,2021-05-20,https://youtu.be/49ZIuQjl1HI,C major,C major,,https://youtu.be/gxEPV4kolz0,Official music video
@@ -119,9 +121,10 @@ id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url
 0004-01,Perfect,Ed Sheeran,Piano Solo,https://www.musicnotes.com/l/CtMMQ,2021-03-01,https://youtu.be/5G1avTeHm9U,A-flat major,A-flat major,,https://youtu.be/2Vv-BfVoq4g,Official music video
 0003-02,Willow,Taylor Swift,Easy Piano,https://www.musicnotes.com/l/TtMMS,2021-03-01,https://youtu.be/a7q08N-aRrc,G major,G major,,https://youtu.be/RsEZmictANA,Official music video
 0003-01,Willow,Taylor Swift,Piano Solo,https://www.musicnotes.com/l/cRMMZ,2021-03-01,https://youtu.be/M6wVqSUep90,G major,G major,,https://youtu.be/RsEZmictANA,Official music video
+0033-02,"The Girl Who Fell From the Sky / Carrying You (From ""Laputa: Castle in the Sky"")",Joe Hisaishi,Easy Piano,,,https://youtu.be/04RYuwq0KQo,A minor,C minor,,https://music.youtube.com/watch?v=x4yICqZ9484,Official audio
+0033-01,"The Girl Who Fell From the Sky / Carrying You (From ""Laputa: Castle in the Sky"")",Joe Hisaishi,Piano Solo,,,https://youtu.be/wBNFXU_EI5o,C minor,C minor,,https://music.youtube.com/watch?v=fTQqdrvMW7s,Official audio
+0033-00,"The Girl Who Fell From the Sky / Carrying You (From ""Laputa: Castle in the Sky"")",Joe Hisaishi,Lead Sheet,,,,E-flat minor,E-flat minor,,https://music.youtube.com/watch?v=x4yICqZ9484,Official audio
 0032-02,"One Summer Day (From ""Spirited Away"")",Joe Hisaishi,Easy Piano,,,https://youtu.be/aFBbhS0IHE8,C major,C major,,https://music.youtube.com/watch?v=6f1vVBjftA4,Official audio
 0032-01,"One Summer Day (From ""Spirited Away"")",Joe Hisaishi,Piano Solo,,,https://youtu.be/D8pvbmd1s3A,C major,C major,,https://music.youtube.com/watch?v=6f1vVBjftA4,Official audio
-0031-01,Our Last Summer,Abba,Piano Solo,,,https://youtu.be/30ar5VXRxNI,D major,D major,,https://youtu.be/xm3s1sANRDE,Official audio
-0031-00,Our Last Summer,Abba,Lead Sheet,,,,D major,D major,,https://youtu.be/xm3s1sANRDE,Official audio
 0030-01,Without You,Mariah Carey,Piano Solo,,,https://youtu.be/vcDuxmO0Jr8,F-sharp major,F-sharp major,,https://youtu.be/6VY8ZxcDh1s,Official audio
 0030-00,Without You,Mariah Carey,Lead Sheet,,,,F-sharp major,F-sharp major,,https://youtu.be/6VY8ZxcDh1s,Official audio
