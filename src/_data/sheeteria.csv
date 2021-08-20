@@ -16,8 +16,8 @@ id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url
 002D-01,The Scientist,Coldplay,Piano Solo,https://www.musicnotes.com/l/nRMMm,2021-07-15,https://youtu.be/pye0yBQRGr4,F major,F major,,https://youtu.be/RB-RcX5DS5A,Official music video
 002C-01,Your Song,Elton John,Piano Solo,https://www.musicnotes.com/l/9zMMW,2021-07-14,https://youtu.be/_MvWZclnzZM,B-flat major,E-flat major,,https://youtu.be/FT3D1Cu6g10,Official audio
 002B-02,Thinking Out Loud,Ed Sheeran,Easy Piano,https://www.musicnotes.com/l/3HhMX,2021-06-18,https://youtu.be/0EHQz_JTPw8,C major,D major,,https://youtu.be/lp-EO5I60KA,Official music video
-002B-01,Thinking Out Loud,Ed Sheeran,Piano Solo,https://www.sheetmusicplus.com/title/22050836,2021-06-18,https://youtu.be/mc9hbxF38s4,D major,D major,,https://youtu.be/lp-EO5I60KA,Official music video
-002B-00,Thinking Out Loud,Ed Sheeran,Lead Sheet,https://www.sheetmusicplus.com/title/22050835,2021-06-18,,D major,D major,,https://youtu.be/lp-EO5I60KA,Official music video
+002B-01,Thinking Out Loud,Ed Sheeran,Piano Solo,https://www.musicnotes.com/l/DKNMq,2021-06-18,https://youtu.be/mc9hbxF38s4,D major,D major,,https://youtu.be/lp-EO5I60KA,Official music video
+002B-00,Thinking Out Loud,Ed Sheeran,Lead Sheet,https://www.musicnotes.com/l/BKNMF,2021-06-18,,D major,D major,,https://youtu.be/lp-EO5I60KA,Official music video
 002A-03,Just The Way You Are,Bruno Mars,Piano Solo (Tender ver.),https://www.musicnotes.com/l/hfhMX,2021-06-16,https://youtu.be/t1sfGjZFVno,F major,F major,,https://youtu.be/LjhCEhWiKXk,Official music video
 002A-02,Just The Way You Are,Bruno Mars,Easy Piano,https://www.musicnotes.com/l/fxhMm,2021-06-16,https://youtu.be/76JnKBXIsKE,C major,F major,,https://youtu.be/LjhCEhWiKXk,Official music video
 002A-01,Just The Way You Are,Bruno Mars,Piano Solo,https://www.musicnotes.com/l/hBhMX,2021-06-16,https://youtu.be/6w_P6fF9MoA,F major,F major,,https://youtu.be/LjhCEhWiKXk,Official music video
@@ -41,7 +41,7 @@ id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url
 0024-01,The Winner Takes It All,Abba,Piano Solo,https://www.musicnotes.com/l/zhNMn,2021-06-01,https://youtu.be/Dy4RY1WZ7EU,F-sharp major,F-sharp major,,https://youtu.be/92cwKCU8Z5c,Official music video
 0024-00,The Winner Takes It All,Abba,Lead Sheet,https://www.sheetmusicplus.com/title/22042925,2021-06-01,,F-sharp major,F-sharp major,,https://youtu.be/92cwKCU8Z5c,Official music video
 0023-02,Shape Of My Heart,Backstreet Boys,Easy Piano,https://www.musicnotes.com/l/hxhMS,2021-05-31,https://youtu.be/vF0M8iqB9rk,G major,E major,,https://youtu.be/OT5msu-dap8,Official music video
-0023-01,Shape Of My Heart,Backstreet Boys,Piano Solo,https://www.sheetmusicplus.com/title/22042692,2021-05-31,https://youtu.be/Ab-xTPWkNlw,E major,E major,,https://youtu.be/OT5msu-dap8,Official music video
+0023-01,Shape Of My Heart,Backstreet Boys,Piano Solo,https://www.musicnotes.com/l/lKNMw,2021-05-31,https://youtu.be/Ab-xTPWkNlw,E major,E major,,https://youtu.be/OT5msu-dap8,Official music video
 0023-00,Shape Of My Heart,Backstreet Boys,Lead Sheet,https://www.sheetmusicplus.com/title/22042690,2021-05-31,,E major,E major,,https://youtu.be/OT5msu-dap8,Official music video
 0022-02,Runaway,Aurora,Easy Piano,https://www.musicnotes.com/l/MxhMq,2021-05-28,https://youtu.be/nWfaBlrBWkE,F major,B major,,https://youtu.be/d_HlPboLRL8,Official music video
 0022-01,Runaway,Aurora,Piano Solo,https://www.musicnotes.com/l/2MNMF,2021-05-28,https://youtu.be/wYfgiZldTl0,B major,B major,I admit it..the rhythms are pretty tricky! Good luck!,https://youtu.be/d_HlPboLRL8,Official music video
@@ -60,7 +60,7 @@ id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url
 001F-01,You Are Not Alone,Michael Jackson,Piano Solo,https://www.sheetmusicplus.com/title/22031885,2021-05-11,https://youtu.be/yFL_uaNrsbI,E-flat major,E-flat major,,https://youtu.be/pAyKJAtDNCw,Official music video
 001F-00,You Are Not Alone,Michael Jackson,Lead Sheet,https://www.sheetmusicplus.com/title/22031884,2021-05-11,,E-flat major,E-flat major,,https://youtu.be/pAyKJAtDNCw,Official music video
 001C-02,Unlearn,benny blanco And Gracie Abrams,Easy Piano,https://www.sheetmusicplus.com/title/22022209,2021-05-04,https://youtu.be/KWPoBz0zBgg,F major,D-flat major,,https://youtu.be/aVXjbwjngEo,Official music video
-001C-01,Unlearn,benny blanco And Gracie Abrams,Piano Solo,https://www.sheetmusicplus.com/title/22022208,2021-05-04,https://youtu.be/ZNLvOfR2U7g,D-flat major,D-flat major,,https://youtu.be/aVXjbwjngEo,Official music video
+001C-01,Unlearn,benny blanco And Gracie Abrams,Piano Solo,https://www.musicnotes.com/l/9rNMZ,2021-05-04,https://youtu.be/ZNLvOfR2U7g,D-flat major,D-flat major,,https://youtu.be/aVXjbwjngEo,Official music video
 001C-00,Unlearn,benny blanco And Gracie Abrams,Lead Sheet,https://www.sheetmusicplus.com/title/22022207,2021-05-04,,D-flat major,D-flat major,,https://youtu.be/aVXjbwjngEo,Official music video
 001B-02,All Of Me,John Legend,Easy Piano,https://www.musicnotes.com/l/6RhMp,2021-04-30,https://youtu.be/YjDQ1nkKBUI,C major,A-flat major,,https://youtu.be/450p7goxZqg,Official music video
 001B-01,All Of Me,John Legend,Piano Solo,https://www.musicnotes.com/l/zRhMJ,2021-04-30,https://youtu.be/0sMvLoRrwqI,A-flat major,A-flat major,,https://youtu.be/450p7goxZqg,Official music video
@@ -75,7 +75,7 @@ id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url
 001A-01,Faded,Alan Walker,Piano Solo,https://www.musicnotes.com/l/GxhMF,2021-04-22,https://youtu.be/5IRvBDLHv5g,G minor,D-sharp minor,,https://youtu.be/60ItHLz5WEA,Official music video
 001A-00,Faded,Alan Walker,Lead Sheet,https://www.musicnotes.com/l/MfhMQ,2021-04-22,,D-sharp minor,D-sharp minor,,https://youtu.be/60ItHLz5WEA,Official music video
 0008-00,Someone Like You,Adele,Lead Sheet,https://www.musicnotes.com/l/dzhMX,2021-04-21,,A major,A major,,https://youtu.be/hLQl3WQQoQ0,Official music video
-0019-00,Deja Vu,Olivia Rodrigo,Lead Sheet,https://www.sheetmusicplus.com/title/22010622,2021-04-20,,A major,A major,,https://youtu.be/cii6ruuycQA,Official music video
+0019-00,Deja Vu,Olivia Rodrigo,Lead Sheet,https://www.musicnotes.com/l/7rNMq,2021-04-20,,A major,A major,,https://youtu.be/cii6ruuycQA,Official music video
 0019-02,Deja Vu,Olivia Rodrigo,Easy Piano,https://www.musicnotes.com/l/dvhMX,2021-04-16,https://youtu.be/lUH6gxObjUw,D major,A major,,https://youtu.be/cii6ruuycQA,Official music video
 0019-01,Deja Vu,Olivia Rodrigo,Piano Solo,https://www.musicnotes.com/l/2xhMm,2021-04-16,https://youtu.be/ltshbg2zjrI,A major,A major,,https://youtu.be/cii6ruuycQA,Official music video
 0017-02,Someone You Loved,Lewis Capaldi,Easy Piano,https://www.musicnotes.com/l/6khMS,2021-04-14,https://youtu.be/uAkzFdn0OgA,C major,D-flat major,,https://youtu.be/zABLecsR5UE,Official music video
@@ -121,7 +121,7 @@ id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url
 0004-01,Perfect,Ed Sheeran,Piano Solo,https://www.musicnotes.com/l/CtMMQ,2021-03-01,https://youtu.be/5G1avTeHm9U,A-flat major,A-flat major,,https://youtu.be/2Vv-BfVoq4g,Official music video
 0003-02,Willow,Taylor Swift,Easy Piano,https://www.musicnotes.com/l/TtMMS,2021-03-01,https://youtu.be/a7q08N-aRrc,G major,G major,,https://youtu.be/RsEZmictANA,Official music video
 0003-01,Willow,Taylor Swift,Piano Solo,https://www.musicnotes.com/l/cRMMZ,2021-03-01,https://youtu.be/M6wVqSUep90,G major,G major,,https://youtu.be/RsEZmictANA,Official music video
-0033-02,"The Girl Who Fell From the Sky / Carrying You (From ""Laputa: Castle in the Sky"")",Joe Hisaishi,Easy Piano,,,https://youtu.be/04RYuwq0KQo,A minor,C minor,,https://music.youtube.com/watch?v=x4yICqZ9484,Official audio
+0033-02,"The Girl Who Fell From the Sky / Carrying You (From ""Laputa: Castle in the Sky"")",Joe Hisaishi,Easy Piano,,,https://youtu.be/04RYuwq0KQo,A minor,E-flat minor,,https://music.youtube.com/watch?v=x4yICqZ9484,Official audio
 0033-01,"The Girl Who Fell From the Sky / Carrying You (From ""Laputa: Castle in the Sky"")",Joe Hisaishi,Piano Solo,,,https://youtu.be/wBNFXU_EI5o,C minor,C minor,,https://music.youtube.com/watch?v=fTQqdrvMW7s,Official audio
 0033-00,"The Girl Who Fell From the Sky / Carrying You (From ""Laputa: Castle in the Sky"")",Joe Hisaishi,Lead Sheet,,,,E-flat minor,E-flat minor,,https://music.youtube.com/watch?v=x4yICqZ9484,Official audio
 0032-02,"One Summer Day (From ""Spirited Away"")",Joe Hisaishi,Easy Piano,,,https://youtu.be/aFBbhS0IHE8,C major,C major,,https://music.youtube.com/watch?v=6f1vVBjftA4,Official audio
