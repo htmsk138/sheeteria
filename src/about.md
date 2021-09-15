@@ -5,17 +5,20 @@ title: About
 
 # About
 
-## About Sheeteria
+## Sheeteria
 
 Sheeteria produces piano arrangement sheet music and tutorial videos of popular songs. By offering high quality arrangements that can be played with simple techniques, Sheeteria aims to help every piano player of any level enjoy playing their favourite songs!
 
-Please note that Synthesia (the piano visualiser) videos are auto-generated computer performance; they are for providing accurate demonstration of how the sheet music is played.
+### Please note:
 
-## About the arranger
+- Synthesia (the piano visualiser) videos are auto-generated computer performance; they are for providing accurate demonstration of how the sheet music sounds like.
+- The songs to be arranged are selected based on either the song's popularity or request. It does not reflect arranger's personal likings, religion, political views or any other kind of preferences.
+
+## The arranger
 
 Playing the piano since the age of 5, Hitomi Seki was classically trained as a child to obtain perfect pitch, basic music theory knowledge and music notation skills. She didn't go to a music college or pursue a musical career, but never stopped playing the piano. Since arranging music has always been a natural thing for her to do, she started Sheeteria in March 2021 hoping it would turn into something helpful for others while fulfilling her passion for music.
 
-## About the arrangements
+## The arrangements
 
 ### Intermediate and advanced piano solo
 
