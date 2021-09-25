@@ -11,8 +11,8 @@ Sheeteria produces piano arrangement sheet music and tutorial videos of popular 
 
 ### Please note:
 
-- Synthesia (the piano visualiser) videos are auto-generated computer performance; they are for providing accurate demonstration of how the sheet music sounds like.
-- The songs to be arranged are selected based on either the song's popularity or request. It does not reflect arranger's personal likings, religion, political views or any other kind of preferences.
+- Synthesia (the piano visualiser) videos are auto-generated computer performance; they are for providing accurate demonstration of what the sheet music sounds like.
+- The songs to be arranged are selected either by a request or based on the song's popularity. It does not reflect arranger's personal likings, religion, political views or any other kind of preferences.
 
 ## The arranger
 
@@ -22,7 +22,7 @@ Playing the piano since the age of 5, Hitomi Seki was classically trained as a c
 
 ### Intermediate and advanced piano solo
 
-The arrangements that say 'piano solo' are designed for intermediate and advanced players. They may contain multiple voices on one hand or rather tricky rhythms, but no awkward fingerings, fast repeated notes or chord voicings wider than a octave.
+The arrangements that say 'piano solo' are designed for intermediate and advanced players. They may contain multiple voices on one hand or rather tricky rhythms, but no awkward fingerings, fast repeated notes or chord voicings wider than an octave.
 
 ### Easy piano solo
 
