@@ -1,9 +1,9 @@
 id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url,org_type
 003B-02,My Universe,Coldplay And BTS,Easy Piano,https://www.musicnotes.com/l/CrgMX,2021-10-14,https://youtu.be/lDorTcMnUJg,C major,E major,,https://youtu.be/3YqPKLZF_WU,Official music video
 003B-01,My Universe,Coldplay And BTS,Piano Solo,https://www.musicnotes.com/l/lrgMm,2021-10-14,https://youtu.be/SMXmj0QxLdQ,E major,E major,,https://youtu.be/3YqPKLZF_WU,Official music video
-003B-00,My Universe,Coldplay And BTS,Lead Sheet,https://www.musicnotes.com/l/vggMF,2021-10-14,,E major,E major,,https://youtu.be/3YqPKLZF_WU,Official music video
+003B-00,My Universe,Coldplay And BTS,Lead Sheet,https://www.musicnotes.com/l/vggMF,2021-10-14,,E major,E major,Contains English and romanised Korean lyrics.,https://youtu.be/3YqPKLZF_WU,Official music video
 0034-01,My Neighbor Totoro,Joe Hisaishi,Piano Solo,https://www.musicnotes.com/l/9lKMb,2021-09-24,https://youtu.be/yZOODYgaxf4,B major,F-sharp major,,https://music.youtube.com/watch?v=eAgrNCKDPfY,Official audio
-0034-00,My Neighbor Totoro,Joe Hisaishi,Lead Sheet,https://www.musicnotes.com/l/jfKMb,2021-09-22,,F-sharp major,F-sharp major,,https://music.youtube.com/watch?v=eAgrNCKDPfY,Official audio
+0034-00,My Neighbor Totoro,Joe Hisaishi,Lead Sheet,https://www.musicnotes.com/l/jfKMb,2021-09-22,,F-sharp major,F-sharp major,Contains romanised Japanese lyrics.,https://music.youtube.com/watch?v=eAgrNCKDPfY,Official audio
 0034-02,My Neighbor Totoro,Joe Hisaishi,Easy Piano,https://www.musicnotes.com/l/MGKMb,2021-09-21,https://youtu.be/8X6FhyZjWzE,C major,F-sharp major,,https://music.youtube.com/watch?v=eAgrNCKDPfY,Official audio
 0033-01,"The Girl Who Fell From the Sky (From ""Laputa: Castle in the Sky"")",Joe Hisaishi,Piano Solo,https://www.musicnotes.com/l/dtKM4,2021-09-14,https://youtu.be/wBNFXU_EI5o,C minor,C minor,,https://music.youtube.com/watch?v=fTQqdrvMW7s,Official audio
 0032-02,"One Summer Day (From ""Spirited Away"")",Joe Hisaishi,Easy Piano,https://www.musicnotes.com/l/TKKM4,2021-09-09,https://youtu.be/aFBbhS0IHE8,C major,C major,,https://music.youtube.com/watch?v=6f1vVBjftA4,Official audio
@@ -11,7 +11,7 @@ id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url
 0030-01,Without You,Mariah Carey,Piano Solo,https://www.musicnotes.com/l/D6NMJ,2021-08-25,https://youtu.be/vcDuxmO0Jr8,F-sharp major,F-sharp major,,https://youtu.be/6VY8ZxcDh1s,Official audio
 0030-00,Without You,Mariah Carey,Lead Sheet,https://www.musicnotes.com/l/B6NMP,2021-08-25,,F-sharp major,F-sharp major,,https://youtu.be/6VY8ZxcDh1s,Official audio
 0033-02,"Carrying You (From ""Laputa: Castle in the Sky"")",Joe Hisaishi,Easy Piano,https://www.musicnotes.com/l/ltNMX,2021-08-24,https://youtu.be/04RYuwq0KQo,A minor,E-flat minor,,https://music.youtube.com/watch?v=x4yICqZ9484,Official audio
-0033-00,"Carrying You (From ""Laputa: Castle in the Sky"")",Joe Hisaishi,Lead Sheet,https://www.musicnotes.com/l/DtNMJ,2021-08-24,,E-flat minor,E-flat minor,,https://music.youtube.com/watch?v=x4yICqZ9484,Official audio
+0033-00,"Carrying You (From ""Laputa: Castle in the Sky"")",Joe Hisaishi,Lead Sheet,https://www.musicnotes.com/l/DtNMJ,2021-08-24,,E-flat minor,E-flat minor,Contains romanised Japanese lyrics.,https://music.youtube.com/watch?v=x4yICqZ9484,Official audio
 0031-01,Our Last Summer,Abba,Piano Solo,https://www.musicnotes.com/l/hNNMb,2021-08-18,https://youtu.be/30ar5VXRxNI,D major,D major,,https://youtu.be/xm3s1sANRDE,Official audio
 0031-00,Our Last Summer,Abba,Lead Sheet,https://www.musicnotes.com/l/NNNMS,2021-08-18,,D major,D major,,https://youtu.be/xm3s1sANRDE,Official audio
 0031-02,Our Last Summer,Abba,Easy Piano,https://www.musicnotes.com/l/7MNMZ,2021-08-17,https://youtu.be/48Gt9TMOoxE,C major,D major,,https://youtu.be/xm3s1sANRDE,Official audio
