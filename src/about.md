@@ -32,4 +32,8 @@ Easy piano versions are meant for beginners. The rhythms and chords are simplifi
 
 ## Support Sheeteria
 
-Sheeteria accepts donations at <a href="https://www.buymeacoffee.com/sheeteria" target="_blank" rel="noreferrer" data-label="buymeacoffee-about">Buy Me a Coffee page</a>. It doesn't require you to register to donate, your $1 really helps and encourages it to keep going. Thank you very much!
+Sheeteria doesn't monetise through YouTube ads. Sheet music sales and kind donations are supporting its operation.
+
+You can make a donation via <a href="https://www.buymeacoffee.com/sheeteria" target="_blank" rel="noreferrer" data-label="buymeacoffee-about">Buy Me a Coffee</a>.
+
+Even a $1 tip is really encouraging - thank you very much!
