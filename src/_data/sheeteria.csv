@@ -1,4 +1,12 @@
 id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url,org_type
+003D-02,Easy On Me,Adele,Easy Piano,https://www.musicnotes.com/l/3MdMw,2021-11-11,https://youtu.be/Rz1QLhq9FFQ,F major,F major,,https://youtu.be/U3ASj1L6_sY,Official music video
+003D-01,Easy On Me,Adele,Piano Solo,https://www.musicnotes.com/l/fMdM4,2021-11-11,https://youtu.be/YNNjo-OeV4A,F major,F major,,https://youtu.be/U3ASj1L6_sY,Official music video
+003D-00,Easy On Me,Adele,Lead Sheet,https://www.musicnotes.com/l/2MdMW,2021-11-11,,F major,F major,,https://youtu.be/U3ASj1L6_sY,Official music video
+003C-02,This Guy's In Love With You,Herb Alpert,Easy Piano,https://www.musicnotes.com/l/HMdMS,2021-11-11,https://youtu.be/oWmjVkffPAc,F major,D-flat major,,https://youtu.be/o8ByJ1C0iR4,Official music video
+003A-02,All By Myself,Eric Carmen,Easy Piano,https://www.musicnotes.com/l/N5zMP,2021-11-11,https://youtu.be/n0oH6mnjS4I,F major,F major,,https://youtu.be/UuliSlNeynk,Official audio
+0039-02,Marigold,Nirvana,Easy Piano,https://www.musicnotes.com/l/ghdMJ,2021-11-11,https://youtu.be/ucs_gPNDmRE,A major,E-flat major,,https://youtu.be/Brv-lCLttyg,Official audio
+0038-02,Sowing The Seeds Of Love,Tears For Fears,Easy Piano,https://www.musicnotes.com/l/HhdMn,2021-11-11,https://youtu.be/mQL236fNegQ,G major,C major,,https://youtu.be/VAtGOESO7W8,Official music video
+0038-01,Sowing The Seeds Of Love,Tears For Fears,Piano Solo,https://www.musicnotes.com/l/vhdMw,2021-11-11,https://youtu.be/CXViEfRMtWE,G major,C major,,https://youtu.be/VAtGOESO7W8,Official music video
 0037-01,I Don't Wanna Go On With You Like That,Elton John,Piano Solo,https://www.musicnotes.com/l/VCzMQ,2021-11-09,https://youtu.be/e3zRQfmZ2Ts,E minor,A minor,,https://youtu.be/kaJRvZZBnX8,Official music video
 0037-00,I Don't Wanna Go On With You Like That,Elton John,Lead Sheet,https://www.musicnotes.com/l/HCzMm,2021-11-09,,A minor,A minor,,https://youtu.be/kaJRvZZBnX8,Official music video
 0037-02,I Don't Wanna Go On With You Like That,Elton John,Easy Piano,https://www.musicnotes.com/l/xHzMJ,2021-11-04,https://youtu.be/ZvdRVgt2ZjY,A minor,A minor,,https://youtu.be/kaJRvZZBnX8,Official music video
@@ -143,18 +151,10 @@ id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url
 0004-01,Perfect,Ed Sheeran,Piano Solo,https://www.musicnotes.com/l/CtMMQ,2021-03-01,https://youtu.be/5G1avTeHm9U,A-flat major,A-flat major,,https://youtu.be/2Vv-BfVoq4g,Official music video
 0003-02,Willow,Taylor Swift,Easy Piano,https://www.musicnotes.com/l/TtMMS,2021-03-01,https://youtu.be/a7q08N-aRrc,G major,G major,,https://youtu.be/RsEZmictANA,Official music video
 0003-01,Willow,Taylor Swift,Piano Solo,https://www.musicnotes.com/l/cRMMZ,2021-03-01,https://youtu.be/M6wVqSUep90,G major,G major,,https://youtu.be/RsEZmictANA,Official music video
-003D-02,Easy On Me,Adele,Easy Piano,,,https://youtu.be/Rz1QLhq9FFQ,F major,F major,,https://youtu.be/U3ASj1L6_sY,Official music video
-003D-01,Easy On Me,Adele,Piano Solo,,,https://youtu.be/YNNjo-OeV4A,F major,F major,,https://youtu.be/U3ASj1L6_sY,Official music video
-003D-00,Easy On Me,Adele,Lead Sheet,,,,F major,F major,,https://youtu.be/U3ASj1L6_sY,Official music video
-003C-02,This Guy's In Love With You,Herb Alpert,Easy Piano,,,https://youtu.be/oWmjVkffPAc,F major,D-flat major,,https://youtu.be/o8ByJ1C0iR4,Official music video
 003C-01,This Guy's In Love With You,Herb Alpert,Piano Solo,,,https://youtu.be/VsXrKMiGu9w,D-flat major,D-flat major,,https://youtu.be/o8ByJ1C0iR4,Official music video
 003C-00,This Guy's In Love With You,Herb Alpert,Lead Sheet,,,,D-flat major,D-flat major,,https://youtu.be/o8ByJ1C0iR4,Official music video
-003A-02,All By Myself,Eric Carmen,Easy Piano,,,https://youtu.be/n0oH6mnjS4I,F major,F major,,https://youtu.be/UuliSlNeynk,Official audio
 003A-01,All By Myself,Eric Carmen,Piano Solo,,,https://youtu.be/wn_bxqn5Wvg,F major,F major,"Though the video is for the shorter version ('single edit'), the sheet music includes transcription of full-length interlude!",https://youtu.be/UuliSlNeynk,Official audio
 003A-00,All By Myself,Eric Carmen,Lead Sheet,,,,F major,F major,This contains transcription of full-length piano solo interlude along with instructions on how to play it as the shorter version ('single edit').,https://youtu.be/iN9CjAfo5n0,Official audio
-0039-02,Marigold,Nirvana,Easy Piano,,,https://youtu.be/ucs_gPNDmRE,A major,E-flat major,,https://youtu.be/Brv-lCLttyg,Official audio
 0039-01,Marigold,Nirvana,Piano Solo,,,https://youtu.be/2SIfMMel7Ro,E-flat major,E-flat major,,https://youtu.be/Brv-lCLttyg,Official audio
 0039-00,Marigold,Nirvana,Lead Sheet,,,,E-flat major,E-flat major,,https://youtu.be/Brv-lCLttyg,Official audio
-0038-02,Sowing The Seeds Of Love,Tears For Fears,Easy Piano,,,https://youtu.be/mQL236fNegQ,G major,C major,,https://youtu.be/VAtGOESO7W8,Official music video
-0038-01,Sowing The Seeds Of Love,Tears For Fears,Piano Solo,,,https://youtu.be/CXViEfRMtWE,G major,C major,,https://youtu.be/VAtGOESO7W8,Official music video
 0038-00,Sowing The Seeds Of Love,Tears For Fears,Lead Sheet,,,,C major,C major,,https://youtu.be/VAtGOESO7W8,Official music video
