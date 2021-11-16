@@ -5,6 +5,8 @@ title: About
 
 # About
 
+![Cover photo](/assets/img/sheeteria_cat.jpeg)
+
 ## Sheeteria
 
 Sheeteria produces piano arrangement sheet music and tutorial videos of popular songs. By offering high quality arrangements that can be played with simple techniques, Sheeteria aims to help every piano player of any level enjoy playing their favourite songs!
