@@ -1,4 +1,5 @@
 id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url,org_type
+003E-02,Yellow,Coldplay,Easy Piano,https://www.musicnotes.com/l/GldMJ,2021-12-05,https://youtu.be/d7LZBBfgL1k,G major,B major,,https://youtu.be/yKNxeF4KMsY,Official music video
 003C-01,This Guy's In Love With You,Herb Alpert,Piano Solo,https://www.musicnotes.com/l/cVdMm,2021-11-22,https://youtu.be/VsXrKMiGu9w,D-flat major,D-flat major,,https://youtu.be/o8ByJ1C0iR4,Official music video
 003A-00,All By Myself,Eric Carmen,Lead Sheet,https://www.musicnotes.com/l/hjdMP,2021-11-18,,F major,F major,This contains transcription of full-length piano solo interlude along with instructions on how to play it as the shorter version ('single edit').,https://youtu.be/iN9CjAfo5n0,Official audio
 003A-01,All By Myself,Eric Carmen,Piano Solo,https://www.musicnotes.com/l/kRdMJ,2021-11-17,https://youtu.be/wn_bxqn5Wvg,F major,F major,"Though the video is for the shorter version ('single edit'), the sheet music includes transcription of full-length interlude!",https://youtu.be/UuliSlNeynk,Official audio
@@ -162,6 +163,5 @@ id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url
 0040-00,Heart-Shaped Box,Nirvana,Lead Sheet,,,,G-sharp minor,G-sharp minor,,https://youtu.be/n6P0SitRwy8,Official music video
 003F-02,Ain't That A Kick In The Head,Dean Martin,Easy Piano,,,https://youtu.be/UAqIjrpqUvc,C major,D major,,https://youtu.be/K7jgZTDLeIs,Official audio
 003F-00,Ain't That A Kick In The Head,Dean Martin,Lead Sheet,,,,D major,D major,,https://youtu.be/K7jgZTDLeIs,Official audio
-003E-02,Yellow,Coldplay,Easy Piano,,,https://youtu.be/d7LZBBfgL1k,G major,B major,,https://youtu.be/yKNxeF4KMsY,Official music video
 003E-01,Yellow,Coldplay,Piano Solo,,,https://youtu.be/NOyt6yf_Ysg,B major,B major,,https://youtu.be/yKNxeF4KMsY,Official music video
 003E-00,Yellow,Coldplay,Lead Sheet,,,,B major,B major,,https://youtu.be/yKNxeF4KMsY,Official music video
