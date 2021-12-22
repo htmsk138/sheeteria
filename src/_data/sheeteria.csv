@@ -1,4 +1,6 @@
 id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url,org_type
+003E-01,Yellow,Coldplay,Piano Solo,https://www.musicnotes.com/l/22RMp,2021-12-21,https://youtu.be/NOyt6yf_Ysg,B major,B major,,https://youtu.be/yKNxeF4KMsY,Official music video
+003E-00,Yellow,Coldplay,Lead Sheet,https://www.musicnotes.com/l/LvRMZ,2021-12-21,,B major,B major,,https://youtu.be/yKNxeF4KMsY,Official music video
 0040-02,Heart-Shaped Box,Nirvana,Easy Piano,https://www.musicnotes.com/l/2dRMm,2021-12-13,https://youtu.be/Uv98LzCitjI,A minor,G-sharp minor,,https://youtu.be/n6P0SitRwy8,Official music video
 0040-00,Heart-Shaped Box,Nirvana,Lead Sheet,https://www.musicnotes.com/l/7dRMp,2021-12-13,,G-sharp minor,G-sharp minor,,https://youtu.be/n6P0SitRwy8,Official music video
 003E-02,Yellow,Coldplay,Easy Piano,https://www.musicnotes.com/l/GldMJ,2021-12-05,https://youtu.be/d7LZBBfgL1k,G major,B major,,https://youtu.be/yKNxeF4KMsY,Official music video
@@ -165,5 +167,3 @@ id,title,artist,style,store_url,published_on,youtube,key,org_key,comment,org_url
 003F-02,Ain't That A Kick In The Head,Dean Martin,Easy Piano,,,https://youtu.be/UAqIjrpqUvc,C major,D major,,https://youtu.be/K7jgZTDLeIs,Official audio
 003F-01,Ain't That A Kick In The Head,Dean Martin,Piano Solo,,,https://youtu.be/f_kLo1_Pt74,F major,D major,,https://youtu.be/K7jgZTDLeIs,Official audio
 003F-00,Ain't That A Kick In The Head,Dean Martin,Lead Sheet,,,,D major,D major,,https://youtu.be/K7jgZTDLeIs,Official audio
-003E-01,Yellow,Coldplay,Piano Solo,,,https://youtu.be/NOyt6yf_Ysg,B major,B major,,https://youtu.be/yKNxeF4KMsY,Official music video
-003E-00,Yellow,Coldplay,Lead Sheet,,,,B major,B major,,https://youtu.be/yKNxeF4KMsY,Official music video
