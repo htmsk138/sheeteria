@@ -13,14 +13,9 @@ Sheeteria produces piano arrangement sheet music and tutorial videos of popular 
 
 All sheet music are published legally under [Musicnote's Signature Artists](https://www.musicnotes.com/signatureartists/) program.
 
-### Please note:
-
-- Synthesia (the piano visualiser) videos are auto-generated computer performance; they are for providing accurate demonstration of what the sheet music sounds like.
-- The songs to be arranged are selected either by a request or based on the song's popularity. It does not reflect arranger's personal likings, religion, political views or any other kind of preferences.
-
 ## The arranger
 
-Playing the piano since the age of 5, [Hitomi Seki](https://hitomiseki.com) was classically trained as a child to obtain perfect pitch, basic music theory knowledge and music notation skills. She didn't go to a music college or pursue a musical career, but has never stopped playing the piano. Since arranging music has always been a natural thing for her to do, she started Sheeteria in March 2021 hoping it would turn into something helpful for others while fulfilling her passion for music.
+[Hitomi Seki](https://hitomiseki.com) was classically trained as a child to obtain perfect pitch, basic music theory knowledge and music notation skills. She loves piano and plays anything she listens.
 
 ## The arrangements
 
@@ -34,8 +29,4 @@ Easy piano versions are meant for beginners. The rhythms and chords are simplifi
 
 ## Support Sheeteria
 
-Sheeteria doesn't monetise through YouTube ads. Sheet music sales and kind donations are supporting its operation.
-
-You can make a donation via <a href="https://www.buymeacoffee.com/sheeteria" target="_blank" rel="noreferrer" data-label="buymeacoffee-about">Buy Me a Coffee</a>.
-
-Even a $1 tip is really encouraging - thank you very much!
+Sheeteria doesn't monetise via YouTube ads. If you like the videos, please consider <a href="https://www.buymeacoffee.com/sheeteria" target="_blank" rel="noreferrer" data-label="buymeacoffee-about">buying me a coffee</a>. Thank you!
