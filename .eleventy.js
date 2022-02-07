@@ -20,6 +20,14 @@ module.exports = function (eleventyConfig) {
       songs[songId].sheetList[sheet.id.slice(5, 7)] = sheet.style;
     });
 
+    // Sort sheet list by id
+    Object.values(songs).forEach(function(song) {
+      song.sheetList = Object.keys(song.sheetList).sort().reduce(function(result, key) {
+        result[key] = song.sheetList[key];
+        return result;
+      }, {});
+    });
+
     return Object.values(songs);
   });
 
