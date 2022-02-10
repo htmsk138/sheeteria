@@ -1,0 +1,3 @@
+{%- for artist in artists -%}
+<a href="{{ '/artist/' + artist.slug + '/' | url }}">{{ artist.name }}</a>&nbsp;{{ artist.separator }}&nbsp;
+{%- endfor -%}

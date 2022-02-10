@@ -6,14 +6,15 @@ pagination:
   alias: song
 permalink: "/sheet/{{ song.id | lower }}/index.html"
 eleventyComputed:
-  title: "{{ song.title | safe }} ({{ song.artist | safe }}) Sheet Music"
+  title: "Sheet music for {{ song.title | safe }} ({{ song.artist | safe }})"
   description: "All Sheet Music for {{ song.artist | safe }}'s {{ song.title | safe }}"
 ---
 <article>
   <h1>
-    {{- song.title -}}<br>
-    ({{- song.artist -}})
+    Sheet Music For "{{ song.title -}}"
   </h1>
+  {% set artists = song.artists %}
+  <p>By {% include 'parts/artist_credit.njk' %}</p>
   <ul>
     {%- for id, style in song.sheetList -%}
     <li>

@@ -19,7 +19,6 @@ eleventyComputed:
 <article class="sheet-detail">
   <h1>
     {{- sheet.title -}}<br>
-    ({{- sheet.artist -}})<br>
     {{- sheet.style -}}
   </h1>
   {%- if sheet.youtube -%}
@@ -29,6 +28,15 @@ eleventyComputed:
   {%- endif -%}
   <table>
     <tbody>
+      <tr>
+        <th>
+          Artist
+        </th>
+        <td>
+        {% set artists = sheet.artists %}
+        {% include 'parts/artist_credit.njk' %}
+        </td>
+      </tr>
       {%- if 'Lead Sheet' != sheet.style -%}
       <tr>
         <th>

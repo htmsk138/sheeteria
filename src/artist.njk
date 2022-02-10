@@ -1,0 +1,26 @@
+---
+layout: layouts/main
+pagination:
+  data: collections.artists
+  size: 1
+  alias: artist
+permalink: "/artist/{{ artist.slug }}/index.html"
+eleventyComputed:
+  title: "Sheet music for songs by {{ artist.name | safe }}"
+  description: "All sheet music for {{ artist.name | safe }}'s songs"
+---
+<article>
+  <h1>
+    Songs by {{ artist.name }}
+  </h1>
+  <ul>
+    {%- for songId, song in artist.songList -%}
+    <li>
+      <a href="{{ '/sheet/' + songId + '/' | url }}">{{ song.title }}</a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</article>
+<p>
+  <a href="{{ '/' | url }}">&laquo; Back to sheet list</a>
+</p>

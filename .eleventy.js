@@ -4,7 +4,7 @@ const parse = require("csv-parse/lib/sync");
 
 module.exports = function (eleventyConfig) {
   /**
-   * Build songs data based on sheets data.
+   * Song collection.
    */
   eleventyConfig.addCollection('songs', function(collectionApi) {
     var songs = {};
@@ -14,7 +14,7 @@ module.exports = function (eleventyConfig) {
         songs[songId] = {};
         songs[songId].id = songId;
         songs[songId].title = sheet.title;
-        songs[songId].artist = sheet.artist;
+        songs[songId].artists = sheet.artists;
         songs[songId].sheetList = {};
       }
       songs[songId].sheetList[sheet.id.slice(5, 7)] = sheet.style;
@@ -29,6 +29,40 @@ module.exports = function (eleventyConfig) {
     });
 
     return Object.values(songs);
+  });
+
+  /**
+   * Artist collection.
+   */
+  eleventyConfig.addCollection('artists', function(collectionApi) {
+    var artists = {};
+    collectionApi.items[0].data.sheeteria.forEach(function(sheet) {
+      var i = 1;
+      while (sheet.hasOwnProperty('artist_name_' + i.toString()) && '' !== sheet['artist_name_' + i.toString()]) {
+        var artistSlug = sheet['artist_slug_' + i.toString()];
+
+        if (!artists[artistSlug]) {
+          artists[artistSlug] = {
+            'name': sheet['artist_name_' + i.toString()],
+            'slug': artistSlug,
+            'songList': {}
+          };
+        }
+
+        // Add song
+        if (!artists[artistSlug].songList.hasOwnProperty(sheet.song_id)) {
+          artists[artistSlug].songList[sheet.song_id] = {
+            'id': sheet.song_id,
+            'title': sheet.title,
+            'sheetList': {}
+          }
+        }
+
+        i++;
+      }
+    });
+
+    return Object.values(artists);
   });
 
   /**
@@ -58,10 +92,28 @@ module.exports = function (eleventyConfig) {
    * Load data from csv file.
    */
   eleventyConfig.addDataExtension("csv", (contents) => {
-    return parse(contents, {
+    var sheeteria = parse(contents, {
       columns: true,
       skip_empty_lines: true,
     });
+
+    sheeteria.forEach(function(sheet) {
+      sheet.artists = [];
+
+      // Add object for displaying artist credits.
+      var i = 1;
+      while (sheet.hasOwnProperty('artist_name_' + i.toString()) && '' !== sheet['artist_name_' + i.toString()]) {
+        var artistObj = {
+          'name': sheet['artist_name_' + i.toString()],
+          'separator': sheet['artist_separator_' + i.toString()],
+          'slug': sheet['artist_slug_' + i.toString()]
+        };
+        sheet.artists.push(artistObj);
+        i++;
+      }
+    });
+
+    return sheeteria;
   });
 
   /**
