@@ -11,14 +11,13 @@ module.exports = function (eleventyConfig) {
     collectionApi.items[0].data.sheeteria.forEach(function(sheet) {
       var songId = sheet.id.slice(0, 4);
       if (!songs[songId]) {
-        songs[songId] = {};
-        songs[songId].id = songId;
-        songs[songId].title = sheet.title;
-        songs[songId].artists = sheet.artists;
-        songs[songId].sheetList = {};
+        songs[songId] = {
+          'id': songId,
+          'title': sheet.title,
+          'artists': sheet.artists,
+          'sheetList': {},
+        };
       }
-      songs[songId].sheetList[sheet.id.slice(5, 7)] = sheet.style;
-    });
 
       songs[songId].sheetList[sheet.id.slice(5, 7)] = {
         'id': sheet.id.slice(5, 7),
@@ -48,7 +47,7 @@ module.exports = function (eleventyConfig) {
         }
 
         // Add song
-        if (!artists[artistSlug].songList.hasOwnProperty(sheet.song_id)) {
+        if (!artists[artistSlug].songList[sheet.song_id]) {
           artists[artistSlug].songList[sheet.song_id] = {
             'id': sheet.song_id,
             'title': sheet.title,
@@ -68,11 +67,7 @@ module.exports = function (eleventyConfig) {
    */
   eleventyConfig.addFilter('sortByTitle', function(obj, isAsc) {
     return Object.values(obj).sort(function(a, b) {
-      if (isAsc) {
-        return a.title > b.title ? 1 : -1;
-      } else {
-        return a.title < b.title ? 1 : -1;
-      }
+      return isAsc === a.title > b.title ? 1 : -1;
     });
   });
 
@@ -81,11 +76,7 @@ module.exports = function (eleventyConfig) {
    */
   eleventyConfig.addFilter('sortById', function(obj, isAsc) {
     return Object.values(obj).sort(function(a, b) {
-      if (isAsc) {
-        return a.id > b.id ? 1 : -1;
-      } else {
-        return a.id < b.id ? 1 : -1;
-      }
+      return isAsc === a.id > b.id ? 1 : -1;
     });
   });
 
