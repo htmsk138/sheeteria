@@ -97,6 +97,15 @@ module.exports = function (eleventyConfig) {
       skip_empty_lines: true,
     });
 
+    // Remove items not ready
+    sheeteria = sheeteria.filter(function(sheet) {
+      return '' !== sheet.status;
+
+    // Sort by publishing date descending
+    }).sort(function(a, b) {
+      return a.published_on < b.published_on ? 1 : -1;
+    });
+
     sheeteria.forEach(function(sheet) {
       sheet.artists = [];
 
