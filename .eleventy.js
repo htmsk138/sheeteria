@@ -14,6 +14,7 @@ module.exports = function (eleventyConfig) {
         songs[songId] = {
           'id': songId,
           'title': sheet.title,
+          'artist': sheet.artist,
           'artists': sheet.artists,
           'sheetList': {},
         };
@@ -67,7 +68,7 @@ module.exports = function (eleventyConfig) {
    */
   eleventyConfig.addFilter('sortByTitle', function(obj, isAsc) {
     return Object.values(obj).sort(function(a, b) {
-      return isAsc === a.title > b.title ? 1 : -1;
+      return isAsc === a.title.toLowerCase() > b.title.toLowerCase() ? 1 : -1;
     });
   });
 
@@ -76,7 +77,16 @@ module.exports = function (eleventyConfig) {
    */
   eleventyConfig.addFilter('sortById', function(obj, isAsc) {
     return Object.values(obj).sort(function(a, b) {
-      return isAsc === a.id > b.id ? 1 : -1;
+      return isAsc === a.id.toLowerCase() > b.id.toLowerCase() ? 1 : -1;
+    });
+  });
+
+  /**
+   * Convert given object to array and sort by 'name' property.
+   */
+  eleventyConfig.addFilter('sortByName', function(obj, isAsc) {
+    return Object.values(obj).sort(function(a, b) {
+      return isAsc === a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1;
     });
   });
 
