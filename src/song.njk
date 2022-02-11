@@ -16,9 +16,9 @@ eleventyComputed:
   {% set artists = song.artists %}
   <p>By {% include 'parts/artist_credit.njk' %}</p>
   <ul>
-    {%- for id, style in song.sheetList -%}
+    {%- for sheet in song.sheetList | sortById(true) -%}
     <li>
-      <a href="{{ './' + id + '/' | url }}">{{ style }}</a>
+      <a href="{{ './' + sheet.id + '/' | url }}">{{ sheet.style }}</a>
     </li>
     {%- endfor -%}
   </ul>

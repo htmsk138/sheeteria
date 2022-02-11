@@ -20,12 +20,10 @@ module.exports = function (eleventyConfig) {
       songs[songId].sheetList[sheet.id.slice(5, 7)] = sheet.style;
     });
 
-    // Sort sheet list by id
-    Object.values(songs).forEach(function(song) {
-      song.sheetList = Object.keys(song.sheetList).sort().reduce(function(result, key) {
-        result[key] = song.sheetList[key];
-        return result;
-      }, {});
+      songs[songId].sheetList[sheet.id.slice(5, 7)] = {
+        'id': sheet.id.slice(5, 7),
+        'style': sheet.style
+      };
     });
 
     return Object.values(songs);
@@ -63,6 +61,32 @@ module.exports = function (eleventyConfig) {
     });
 
     return Object.values(artists);
+  });
+
+  /**
+   * Convert given object to array and sort by 'title' property.
+   */
+  eleventyConfig.addFilter('sortByTitle', function(obj, isAsc) {
+    return Object.values(obj).sort(function(a, b) {
+      if (isAsc) {
+        return a.title > b.title ? 1 : -1;
+      } else {
+        return a.title < b.title ? 1 : -1;
+      }
+    });
+  });
+
+  /**
+   * Convert given object to array and sort by 'id' property.
+   */
+  eleventyConfig.addFilter('sortById', function(obj, isAsc) {
+    return Object.values(obj).sort(function(a, b) {
+      if (isAsc) {
+        return a.id > b.id ? 1 : -1;
+      } else {
+        return a.id < b.id ? 1 : -1;
+      }
+    });
   });
 
   /**
