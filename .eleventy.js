@@ -14,6 +14,7 @@ module.exports = function (eleventyConfig) {
         songs[songId] = {
           'id': songId,
           'title': sheet.title,
+          'artist': sheet.artist,
           'artists': sheet.artists,
           'sheetList': {},
         };
