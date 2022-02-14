@@ -1,0 +1,15 @@
+---
+layout: layouts/main
+title: List of artists
+---
+<h1>List of artists</h1>
+<ul class="sheet-list">
+{%- for artist in collections.artists | sortByName(true) -%}
+	<li>
+		<a href="{{ '/artist/' + artist.slug + '/' | url }}">{{ artist.name }}</a>
+	</li>
+{%- endfor -%}
+</ul>
+<p>
+  {% include 'parts/back_to_home.njk' %}
+</p>
