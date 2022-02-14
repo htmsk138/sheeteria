@@ -1,8 +1,9 @@
 ---
 permalink: ".htaccess"
 ---
+ErrorDocument 404 /404.html
 
-{%- for sheet in sheeteria -%}
+{% for sheet in sheeteria -%}
 Redirect 301 /{{ sheet.id | shortslug }}	/sheet/{{ sheet.id | lower | replace('-', '/') }}/
 {% endfor -%}
 {% for song in collections.songs -%}
