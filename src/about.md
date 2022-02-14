@@ -26,7 +26,3 @@ The arrangements that say 'piano solo' are designed for intermediate and advance
 ### Easy piano solo
 
 Easy piano versions are meant for beginners. The rhythms and chords are simplified enough for beginners without spoiling the good sound. Their tutorial videos have note labels on every note to help those who don't read sheet music. Don't hesitate to play your favourite tune even if you have started playing the piano yesterday, it's fun!
-
-## Support Sheeteria
-
-Sheeteria doesn't monetise via YouTube ads. If you like the videos, please consider <a href="https://www.buymeacoffee.com/sheeteria" target="_blank" rel="noreferrer" data-label="buymeacoffee-about">buying me a coffee</a>. Thank you!
