@@ -1,4 +1,4 @@
-var sheets = [], keywords = '', filters = [], noMatchMsg = null, prevAnyMatch = true;
+var sheets = [], keywords = '', filters = [], noMatchMsg = null;
 document.addEventListener('DOMContentLoaded', function() {
   sheets = document.querySelectorAll('#sheet-list li');
   noMatchMsg = document.getElementById('nomatch');
@@ -118,26 +118,6 @@ function sortSheets() {
 function handleNoMatch() {
   var anyMatch = Array.from(sheets).some(function(item) { return item.offsetParent !== null });
   noMatchMsg.style.display = anyMatch ? 'none' : '';
-
-  // If no match for the first time, send the terms to GA
-  if (prevAnyMatch && !anyMatch) {
-    trackSearch();
-  }
-
-  // Save the result
-  prevAnyMatch = anyMatch;
-}
-
-/**
- * Send search terms to GA.
- */
-function trackSearch() {
-  if (typeof gtag === 'function') {
-    gtag('event', 'view_search_results', {
-      'search_term': new Array(keywords, ...filters).join(),
-      'transport_type': 'beacon',
-    });
-  }
 }
 
 /**
