@@ -16,7 +16,7 @@ eleventyComputed:
   <ul>
     {%- for song in artist.songList | sortByTitle(true) -%}
     <li>
-      <a href="{{ '/sheet/' + song.id + '/' | url }}">{{ song.title }}</a>
+      <a href="{{ '/sheet/' | url }}{{ song.id | lower }}/">{{ song.title }}</a>
     </li>
     {%- endfor -%}
   </ul>

@@ -6,7 +6,7 @@ title: List of songs
 <ul class="sheet-list">
 {%- for song in collections.songs | sortByTitle(true) -%}
 	<li>
-		<a href="{{ '/sheet/' + song.id + '/' | url }}">{{ song.title }} ({{ song.artist }})</a>
+		<a href="{{ '/sheet/' | url }}{{ song.id | lower }}/">{{ song.title }} ({{ song.artist }})</a>
 	</li>
 {%- endfor -%}
 </ul>
