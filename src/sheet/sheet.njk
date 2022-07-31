@@ -97,6 +97,8 @@ eleventyComputed:
 </article>
 
 <p>
+  {%- if sheet.published_on -%}
   <a href="{{ '../' | url }}">&laquo;&nbsp;Other variations</a><br>
+  {%- endif -%}
   {% include 'parts/back_to_home.njk' %}
 </p>

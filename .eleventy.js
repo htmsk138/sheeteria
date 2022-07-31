@@ -10,20 +10,22 @@ module.exports = function (eleventyConfig) {
     var songs = {};
     collectionApi.items[0].data.sheeteria.forEach(function(sheet) {
       var songId = sheet.id.slice(0, 4);
-      if (!songs[songId]) {
-        songs[songId] = {
-          'id': songId,
-          'title': sheet.title,
-          'artist': sheet.artist,
-          'artists': sheet.artists,
-          'sheetList': {},
+      if (sheet.published_on) {
+        if (!songs[songId]) {
+          songs[songId] = {
+            'id': songId,
+            'title': sheet.title,
+            'artist': sheet.artist,
+            'artists': sheet.artists,
+            'sheetList': {},
+          };
+        }
+
+        songs[songId].sheetList[sheet.id.slice(5, 7)] = {
+          'id': sheet.id.slice(5, 7),
+          'style': sheet.style
         };
       }
-
-      songs[songId].sheetList[sheet.id.slice(5, 7)] = {
-        'id': sheet.id.slice(5, 7),
-        'style': sheet.style
-      };
     });
 
     return Object.values(songs);
@@ -36,27 +38,29 @@ module.exports = function (eleventyConfig) {
     var artists = {};
     collectionApi.items[0].data.sheeteria.forEach(function(sheet) {
       var i = 1;
-      while (sheet.hasOwnProperty('artist_name_' + i.toString()) && '' !== sheet['artist_name_' + i.toString()]) {
-        var artistSlug = sheet['artist_slug_' + i.toString()];
+      if (sheet.published_on) {
+        while (sheet.hasOwnProperty('artist_name_' + i.toString()) && '' !== sheet['artist_name_' + i.toString()]) {
+          var artistSlug = sheet['artist_slug_' + i.toString()];
 
-        if (!artists[artistSlug]) {
-          artists[artistSlug] = {
-            'name': sheet['artist_name_' + i.toString()],
-            'slug': artistSlug,
-            'songList': {}
-          };
-        }
-
-        // Add song
-        if (!artists[artistSlug].songList[sheet.song_id]) {
-          artists[artistSlug].songList[sheet.song_id] = {
-            'id': sheet.song_id,
-            'title': sheet.title,
-            'sheetList': {}
+          if (!artists[artistSlug]) {
+            artists[artistSlug] = {
+              'name': sheet['artist_name_' + i.toString()],
+              'slug': artistSlug,
+              'songList': {}
+            };
           }
-        }
 
-        i++;
+          // Add song
+          if (!artists[artistSlug].songList[sheet.song_id]) {
+            artists[artistSlug].songList[sheet.song_id] = {
+              'id': sheet.song_id,
+              'title': sheet.title,
+              'sheetList': {}
+            }
+          }
+
+          i++;
+        }
       }
     });
 
