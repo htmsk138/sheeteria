@@ -49,10 +49,10 @@ eleventyComputed:
       {%- endif -%}
       <tr>
         <th>
-          Key
+          Key (ends in)
         </th>
         <td>
-          {{ sheet.key }} (original: {{ sheet.org_key }})
+          {{ sheet.key }} (original: {{ 'same' if sheet.key === sheet.org_key else sheet.org_key }})
         </td>
       </tr>
       {%- if sheet.published_on -%}
@@ -68,7 +68,7 @@ eleventyComputed:
       {%- if sheet.org_url -%}
       <tr>
         <th>
-          Original
+          Based on
         </th>
         <td>
           <a href="{{ sheet.org_url }}" target="_blank" rel="noreferrer">{{ sheet.org_type or "Official music video" }}</a>
@@ -78,7 +78,7 @@ eleventyComputed:
       {%- if sheet.comment -%}
       <tr>
         <th>
-          Arranger's comment
+          Description
         </th>
         <td>
           {{ sheet.comment }}
