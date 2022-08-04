@@ -7,13 +7,13 @@ permalink: /feed.xml
     <title>{{ metadata.title }}</title>
     <link>{{ metadata.url }}</link>
     <description>{{ metadata.description }}</description>
-	  {%- for sheet in collections.sheet -%}
-	  {%- if sheet.data.publishDate -%}
+	  {%- for sheet in sheeteria -%}
+	  {%- if sheet.published_on -%}
     <item>
-      <title>{{ sheet.data.displayTitle }}</title>
+      <title>{{ sheet.displayTitle }}</title>
       <link>{{ metadata.url + sheet.url }}</link>
-      <pubDate>{{ sheet.data.publishDate | rssDate }}</pubDate>
-      <description>{{ sheet.data.description }} is out now!</description>
+      <pubDate>{{ sheet.published_on | rssDate }}</pubDate>
+      <description>{{ sheet.description }} is out now!</description>
     </item>
     {%- endif -%}
     {%- endfor -%}

@@ -1,0 +1,11 @@
+<ul id="sheet-list" class="sheet-list">
+  {%- for sheet in sheeteria -%}
+  {%- if sheet.published_on -%}
+  <li class="sheet-item" data-ttl="{{ sheet.title | lower }}" data-art="{{ sheet.artist | lower }}" data-f="{{ sheet.filters }}" data-pd="{{ sheet.published_on }}">
+    <a href="{{ sheet.url | url }}">
+      {{ sheet.displayTitle }}
+    </a>
+  </li>
+  {%- endif -%}
+  {%- endfor -%}
+</ul>

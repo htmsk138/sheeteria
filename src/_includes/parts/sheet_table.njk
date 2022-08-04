@@ -1,0 +1,33 @@
+<table id="sheet-list" class="sheet-list">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Artist</th>
+      <th>Arrangements</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- for song in collections.songs -%}
+    {%- if song.published_on -%}
+    <tr class="sheet-item" data-ttl="{{ song.title | lower }}" data-art="{{ song.artist | lower }}" data-f="{{ song.filters }}" data-pd="{{ song.published_on }}">
+      <td>
+        <a href="{{ '/sheet/' | url }}{{ song.id | lower }}/">{{- song.title -}}</a>
+      </td>
+      <td>
+        {% set artists = song.artists %}
+        {% include 'parts/artist_credit.njk' %}
+      </td>
+      <td>
+        <ul>
+      {%- for sheet in song.sheetList | sortById(true) -%}
+      <li>
+        <a href="{{- sheet.url | url -}}">{{- sheet.style -}}</a>
+      </li>
+      {%- endfor -%}
+        </ul>
+      </td>
+    </tr>
+    {%- endif -%}
+    {%- endfor -%}
+  </tbody>
+</table>

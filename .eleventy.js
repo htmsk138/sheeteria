@@ -9,22 +9,30 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection('songs', function(collectionApi) {
     var songs = {};
     collectionApi.items[0].data.sheeteria.forEach(function(sheet) {
-      var songId = sheet.id.slice(0, 4);
       if (sheet.published_on) {
-        if (!songs[songId]) {
-          songs[songId] = {
-            'id': songId,
+        if (!songs[sheet.song_id]) {
+          songs[sheet.song_id] = {
+            'id': sheet.song_id,
             'title': sheet.title,
             'artist': sheet.artist,
             'artists': sheet.artists,
+            'filters': '',
+            'published_on': '',
             'sheetList': {},
           };
         }
 
-        songs[songId].sheetList[sheet.id.slice(5, 7)] = {
-          'id': sheet.id.slice(5, 7),
-          'style': sheet.style
-        };
+        // Store sheet object
+        songs[sheet.song_id].sheetList[sheet.id.slice(5, 7)] = sheet;
+
+        // Get filters of every sheet for the song concatenated
+        songs[sheet.song_id].filters =
+          songs[sheet.song_id].filters.concat(' ', sheet.filters).trim();
+
+        // Get the latest publication date
+        songs[sheet.song_id].published_on =
+          songs[sheet.song_id].published_on < sheet.published_on ?
+            sheet.published_on : songs[sheet.song_id].published_on;
       }
     });
 
@@ -37,30 +45,25 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection('artists', function(collectionApi) {
     var artists = {};
     collectionApi.items[0].data.sheeteria.forEach(function(sheet) {
-      var i = 1;
       if (sheet.published_on) {
-        while (sheet.hasOwnProperty('artist_name_' + i.toString()) && '' !== sheet['artist_name_' + i.toString()]) {
-          var artistSlug = sheet['artist_slug_' + i.toString()];
-
-          if (!artists[artistSlug]) {
-            artists[artistSlug] = {
-              'name': sheet['artist_name_' + i.toString()],
-              'slug': artistSlug,
+        sheet.artists.forEach(function(artist) {
+          if (!artists[artist.slug]) {
+            artists[artist.slug] = {
+              'name': artist.name,
+              'slug': artist.slug,
               'songList': {}
-            };
+            }
           }
 
           // Add song
-          if (!artists[artistSlug].songList[sheet.song_id]) {
-            artists[artistSlug].songList[sheet.song_id] = {
+          if (!artists[artist.slug].songList[sheet.song_id]) {
+            artists[artist.slug].songList[sheet.song_id] = {
               'id': sheet.song_id,
               'title': sheet.title,
               'sheetList': {}
             }
           }
-
-          i++;
-        }
+        });
       }
     });
 
@@ -103,21 +106,6 @@ module.exports = function (eleventyConfig) {
   });
 
   /**
-   * Generate filter slug based on text passed on.
-   */
-  eleventyConfig.addFilter('sheetFilter', function(text) {
-    switch(text.toLowerCase()) {
-      case 'lead sheet':
-        return 's0';
-
-      case 'easy piano':
-        return 's2';
-    }
-
-    return 's1';
-  });
-
-  /**
    * Load data from csv file.
    */
   eleventyConfig.addDataExtension("csv", (contents) => {
@@ -136,9 +124,13 @@ module.exports = function (eleventyConfig) {
     });
 
     sheeteria.forEach(function(sheet) {
-      sheet.artists = [];
+      // Meta
+      sheet.displayTitle = `${sheet.title} (${sheet.artist}) - ${sheet.style}`;
+      sheet.description = `${sheet.style === 'Lead Sheet' ? sheet.style : sheet.style + 'Sheet Music'} for ${sheet.artist}'s ${sheet.title}`;
+      sheet.url = `/sheet/${sheet.id.toLowerCase().replace('-', '/')}/`;
 
-      // Add object for displaying artist credits.
+      // Artists
+      sheet.artists = [];
       var i = 1;
       while (sheet.hasOwnProperty('artist_name_' + i.toString()) && '' !== sheet['artist_name_' + i.toString()]) {
         var artistObj = {
@@ -149,6 +141,24 @@ module.exports = function (eleventyConfig) {
         sheet.artists.push(artistObj);
         i++;
       }
+
+      // Add values used for filtering
+
+      // Keyword
+      sheet.keyword = `${sheet.title.toLowerCase()} ${sheet.artist.toLowerCase()}`;
+
+      // Style
+      var styleFilter = 's1';
+      switch(sheet.style.toLowerCase()) {
+        case 'lead sheet':
+          styleFilter = 's0';
+          break;
+
+        case 'easy piano':
+          styleFilter = 's2';
+          break;
+      }
+      sheet.filters = styleFilter;
     });
 
     return sheeteria;
@@ -161,6 +171,9 @@ module.exports = function (eleventyConfig) {
     return new Date(date).toUTCString();
   });
 
+  /**
+   * Minify HTML on production build.
+   */
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if(isProduction && outputPath.endsWith(".html")) {
       return htmlmin.minify(content, {

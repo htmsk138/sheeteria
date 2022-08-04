@@ -1,15 +1,10 @@
-var sheets = [], keywords = '', filters = [], noMatchMsg = null;
+var sheets = [], keywords = '', filters = [], noMatchMsg = null, itemSelector = '.sheet-item';
 document.addEventListener('DOMContentLoaded', function() {
-  sheets = document.querySelectorAll('#sheet-list li');
+  sheets = document.querySelectorAll(itemSelector);
   noMatchMsg = document.getElementById('nomatch');
 
   // Display NEW labels
   displayNew();
-
-  // For some browsers save previous inputs
-  searchSheets(document.getElementById('keyword').value);
-  updateFilters();
-  sortSheets();
 
   /**
    * Toggle filter.
@@ -39,7 +34,8 @@ function searchSheets(terms) {
 
   sheets.forEach(function(item) {
     // Test if the song title and artist name contains every one of space-separated terms
-    match = termList.every(function(term) { return item.dataset.kw.includes(term) });
+    var keyword = item.dataset.ttl.concat(' ', item.dataset.art);
+    match = termList.every(function(term) { return keyword.includes(term) });
 
     // Display/hide the item depending on the test result
     item.style.display = match ? '' : 'none';
@@ -81,23 +77,28 @@ function filterSheets() {
  * Function reference: https://www.w3schools.com/howto/howto_js_sort_list.asp
  */
 function sortSheets() {
-  var key = document.querySelector('[name="sort"]:checked').value;
+  var key = document.querySelector('[name="sort"]:checked').value, currentVal, nextVal;
   var sorting = true, shouldSwitch = false, i;
 
   while (sorting) {
     sorting = false;
 
     for (i = 0; i < sheets.length - 1; i++) {
-      shouldSwitch = false;
+      // Ignore first 'the' when comparing
+      currentVal = sheets[i].dataset[key].replace(/^the /, '');
+      nextVal = sheets[i + 1].dataset[key].replace(/^the /, '');
 
-      switch (key) {
-        case 'title': // Title ASC
-          shouldSwitch = sheets[i].dataset.kw > sheets[i + 1].dataset.kw;
-          break;
+      // Skip if values are same
+      if (currentVal === nextVal) {
+        continue;
+      }
 
-        case 'publish-date': // Date DESC
-          shouldSwitch = sheets[i].dataset.pd < sheets[i + 1].dataset.pd;
-          break;
+      // For ASC sort
+      shouldSwitch = currentVal > nextVal;
+
+      // For DESC sort
+      if (key === 'pd') {
+        shouldSwitch = !shouldSwitch;
       }
 
       if (shouldSwitch) {
@@ -108,7 +109,7 @@ function sortSheets() {
     }
 
     // Update sheet list
-    sheets = document.querySelectorAll('#sheet-list li');
+    sheets = document.querySelectorAll(itemSelector);
   }
 }
 

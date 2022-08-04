@@ -129,7 +129,7 @@ nav a:hover {
 }
 
 li {
-	margin: 0 0 .5em;
+  margin: .3em 0;
 }
 
 .filters label,
@@ -144,22 +144,14 @@ input[type=text] {
   display: block;
   font-size: inherit;
   padding: .5em .8em;
-  margin: 0 auto;
   max-width: 20em;
   width: 100%;
 }
 
 fieldset {
   border: 1px dashed;
-  margin: 0 auto;
-}
-
-legend {
-  font-size: 24px;
-  font-size: 2.4rem;
-  font-weight: bold;
-  padding: 0 .5em;
-  text-align: center;
+  margin: 2em auto;
+  padding: 1em;
 }
 
 .btn {
@@ -188,24 +180,23 @@ article {
   margin: 0 0 5em;
 }
 
-article p {
-  margin: 2em 0;
-  text-align: center;
-}
-
 table {
-  margin: 0 auto;
+  border-collapse: collapse;
+  table-layout: fixed;
 }
 
 th,
 td {
-  padding: 0 1em .5em 0;
-  text-align: right;
+  padding: .3em;
   vertical-align: top;
 }
 
 td {
-  text-align: left;
+  word-break: break-word;
+}
+
+tbody th {
+  text-align: right;
 }
 
 .sr-only {
@@ -224,15 +215,26 @@ td {
   display: none !important;
 }
 
-.sheet-list {
+ul.sheet-list {
   column-gap: 3em;
-  columns: 20em 2;
-  margin: 2em 0;
+  columns: 17em 2;
 }
 
-.sheet-list li {
+ul.sheet-list li {
   break-inside: avoid;
   page-break-inside: avoid;
+}
+
+table.sheet-list {
+  width: 100%;
+}
+
+table.sheet-list tr {
+  border-bottom: 1px dashed;
+}
+
+table.sheet-list ul {
+  margin: 0;
 }
 
 .new {
@@ -240,4 +242,13 @@ td {
   font-size: 80%;
   font-weight: bold;
   margin-left: .5em;
+}
+
+.sheet-detail {
+  margin: 0 auto;
+  max-width: 40em;
+}
+
+.sheet-detail p {
+  text-align: center;
 }

@@ -7,14 +7,10 @@ pagination:
   size: 1
   addAllPagesToCollections: true
   alias: sheet
-permalink: "/sheet/{{ sheet.id | lower | replace('-', '/') }}/index.html"
+permalink: "{{ sheet.url }}/index.html"
 eleventyComputed:
   title: "{{ sheet.title | safe }} ({{ sheet.artist | safe }}) - {{ sheet.style if sheet.style == 'Lead Sheet' else sheet.style + ' Sheet Music' | safe }}"
-  displayTitle: "{{ sheet.title | safe }} ({{ sheet.artist | safe }}) - {{ sheet.style | safe }}"
-  keyword: "{{ sheet.title | lower }} {{ sheet.artist | lower }}"
   description: "{{ sheet.style if sheet.style == 'Lead Sheet' else sheet.style + ' Sheet Music' | safe }} for {{ sheet.artist | safe }}'s {{ sheet.title | safe }}"
-  filters: "{{ sheet.style | sheetFilter }}"
-  publishDate: "{{ sheet.published_on }}"
 ---
 <article class="sheet-detail">
   <h1>

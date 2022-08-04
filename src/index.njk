@@ -6,24 +6,25 @@ title: Home
 <p>
 	Hello and welcome! This website introduces Hitomi Seki's piano arrangement works. Find your favourite songs from the list below and enjoy playing!
 </p>
-<br><br>
-<h2 class="sr-only">List of sheet music</h2>
+<h2>List of products</h2>
 <fieldset>
-	<legend>Search sheet music</legend>
-	<p>
-	  <input id="keyword" type="text" placeholder="Song title or artist name" onkeyup="searchSheets(this.value)" aria-label="Search by song title or artist name">
-	</p>
 	<table class="filters">
 		<tbody>
 			<tr>
+				<th>Search for:</th>
+				<td>
+				  <input id="keyword" type="text" placeholder="Song title or artist name" onkeyup="searchSheets(this.value)" aria-label="Search by song title or artist name" autocomplete="off">
+				</td>
+			</tr>
+			<tr>
 				<th>
-					Style:
+					Arrangement:
 				</th>
 				<td>
-					<label><input type="radio" name="filter-style" value="all" checked>All</label>&nbsp;
-					<label><input type="radio" name="filter-style" value="s1">Piano solo</label>&nbsp;
-					<label><input type="radio" name="filter-style" value="s2">Easy piano</label>&nbsp;
-					<label><input type="radio" name="filter-style" value="s0">Lead sheet</label>
+					<label><input type="radio" name="filter-style" value="all" checked autocomplete="off">All</label>&nbsp;
+					<label><input type="radio" name="filter-style" value="s1" autocomplete="off">Piano solo</label>&nbsp;
+					<label><input type="radio" name="filter-style" value="s2" autocomplete="off">Easy piano</label>&nbsp;
+					<label><input type="radio" name="filter-style" value="s0" autocomplete="off">Lead sheet</label>
 				</td>
 			</tr>
 			<tr>
@@ -31,27 +32,18 @@ title: Home
 					Sort by:
 				</th>
 				<td>
-					<label><input type="radio" name="sort" value="publish-date" checked>Publication date</label>&nbsp;
-					<label><input type="radio" name="sort" value="title">Title</label>
+					<label><input type="radio" name="sort" value="pd" checked autocomplete="off">Latest</label>&nbsp;
+					<label><input type="radio" name="sort" value="ttl" autocomplete="off">Title</label>&nbsp;
+					<label><input type="radio" name="sort" value="art" autocomplete="off">Artist</label>
 				</td>
 			</tr>
 		</tbody>
 	</table>
 </fieldset>
-<p id="nomatch" style="display: none;">No match found. Sorry!</p>
-<ul id="sheet-list" class="sheet-list">
-  {%- for sheet in collections.sheet -%}
-  {%- if sheet.data.publishDate -%}
-  <li data-kw="{{ sheet.data.keyword }}" data-f="{{ sheet.data.filters }}" data-pd="{{ sheet.data.publishDate | replace('-', '') }}">
-    <a href="{{ sheet.url }}">
-      {{ sheet.data.displayTitle }}
-    </a>
-  </li>
-  {%- endif -%}
-  {%- endfor -%}
-</ul>
+{%- include 'parts/sheet_table.njk' -%}
+<p id="nomatch" style="display: none;">Nothing found. Sorry!</p>
 {%- if 'production' === app.env -%}
-<script src="{{ '/assets/js/sheets.min.js' | url }}?v=20220218"></script>
+<script src="{{ '/assets/js/sheets.min.js' | url }}?v=20220804"></script>
 {%- else -%}
 <script src="{{ '/assets/js/sheets.js' | url }}"></script>
 {%- endif -%}
