@@ -128,7 +128,7 @@ function displayNew() {
   // Get date from X days ago and format to YYYYMMDD string
   var newDays = 7;
   var aWeekAgo = new Date(Date.now() - (1000 * 60 * 60 * 24) * newDays);
-  var aWeekAgoStr = aWeekAgo.toISOString().slice(0,10).replace(/-/g,"");
+  var aWeekAgoStr = aWeekAgo.toISOString().slice(0,10);
 
   // NEW label element to display
   var newLabel = document.createElement('span');
@@ -137,7 +137,7 @@ function displayNew() {
 
   sheets.forEach(function(item) {
     if (item.dataset.pd > aWeekAgoStr) {
-      item.appendChild(newLabel.cloneNode(true));
+      item.querySelector('a').before(newLabel.cloneNode(true));
     }
   });
 }
