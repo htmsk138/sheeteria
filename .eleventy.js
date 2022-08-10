@@ -147,18 +147,8 @@ module.exports = function (eleventyConfig) {
       // Keyword
       sheet.keyword = `${sheet.title.toLowerCase()} ${sheet.artist.toLowerCase()}`;
 
-      // Style
-      var styleFilter = 's1';
-      switch(sheet.style.toLowerCase()) {
-        case 'lead sheet':
-          styleFilter = 's0';
-          break;
-
-        case 'easy piano':
-          styleFilter = 's2';
-          break;
-      }
-      sheet.filters = styleFilter;
+      // Style (use the first word for filtering)
+      sheet.filters = sheet.style.toLowerCase().substr(0, sheet.style.indexOf(' '));
     });
 
     return sheeteria;
