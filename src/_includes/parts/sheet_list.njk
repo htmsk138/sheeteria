@@ -1,4 +1,4 @@
-<ul id="sheet-list" class="sheet-list">
+<ul class="sheet-list" hidden>
   {%- for sheet in sheeteria -%}
   {%- if sheet.published_on -%}
   <li class="sheet-item" data-ttl="{{ sheet.title | lower }}" data-art="{{ sheet.artist | lower }}" data-f="{{ sheet.filters }}" data-pd="{{ sheet.published_on }}">

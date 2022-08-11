@@ -1,5 +1,6 @@
-var sheets = [], keywords = '', filters = [], noMatchMsg = null, itemSelector = '.sheet-item';
+var views = [], sheets = [], keywords = '', filters = [], noMatchMsg = null, viewSelector = '.sheet-list', itemSelector = '.sheet-item';
 document.addEventListener('DOMContentLoaded', function() {
+  views = document.querySelectorAll(viewSelector);
   sheets = document.querySelectorAll(itemSelector);
   noMatchMsg = document.getElementById('nomatch');
 
@@ -21,6 +22,15 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('[name="sort').forEach(function(input) {
     input.addEventListener('change', function(e) {
       sortSheets();
+    });
+  });
+
+  /**
+   * Switch view.
+   */
+  document.querySelectorAll('[name="view').forEach(function(input) {
+    input.addEventListener('change', function(e) {
+      switchView();
     });
   });
 });
@@ -78,39 +88,44 @@ function filterSheets() {
  */
 function sortSheets() {
   var key = document.querySelector('[name="sort"]:checked').value, currentVal, nextVal;
-  var sorting = true, shouldSwitch = false, i;
 
-  while (sorting) {
-    sorting = false;
+  views.forEach(function(view) {
+    var sorting = true, shouldSwitch = false, i, sheetsInView;
 
-    for (i = 0; i < sheets.length - 1; i++) {
-      // Ignore first 'the' when comparing
-      currentVal = sheets[i].dataset[key].replace(/^the /, '');
-      nextVal = sheets[i + 1].dataset[key].replace(/^the /, '');
+    while (sorting) {
+      sheetsInView = view.querySelectorAll(itemSelector);
+      sorting = false;
 
-      // Skip if values are same
-      if (currentVal === nextVal) {
-        continue;
-      }
+      for (i = 0; i < sheetsInView.length - 1; i++) {
+        shouldSwitch = false;
 
-      // For ASC sort
-      shouldSwitch = currentVal > nextVal;
+        // Ignore first 'the' when comparing
+        currentVal = sheetsInView[i].dataset[key].replace(/^the /, '');
+        nextVal = sheetsInView[i + 1].dataset[key].replace(/^the /, '');
 
-      // For DESC sort
-      if (key === 'pd') {
-        shouldSwitch = !shouldSwitch;
+        // For DESC sort
+        if (key === 'pd') {
+          shouldSwitch = currentVal < nextVal;
+
+        // For ASC sort
+        } else {
+          shouldSwitch = currentVal > nextVal;
+        }
+
+        if (shouldSwitch) {
+          break;
+        }
       }
 
       if (shouldSwitch) {
-        sheets[i].parentNode.insertBefore(sheets[i + 1], sheets[i]);
+        sheetsInView[i].parentNode.insertBefore(sheetsInView[i + 1], sheetsInView[i]);
         sorting = true; // Still sorting
-        break;
       }
     }
 
     // Update sheet list
     sheets = document.querySelectorAll(itemSelector);
-  }
+  });
 }
 
 /**
@@ -139,5 +154,14 @@ function displayNew() {
     if (item.dataset.pd > aWeekAgoStr) {
       item.querySelector('a').before(newLabel.cloneNode(true));
     }
+  });
+}
+
+/**
+ * Switch between table/list views.
+ */
+function switchView() {
+  views.forEach(function(view) {
+    view.hidden = !view.hidden;
   });
 }

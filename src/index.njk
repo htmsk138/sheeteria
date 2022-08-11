@@ -37,13 +37,23 @@ title: Home
 					<label><input type="radio" name="sort" value="art" autocomplete="off">Artist</label>
 				</td>
 			</tr>
+			<tr>
+				<th>
+					View:
+				</th>
+				<td>
+					<label><input type="radio" name="view" value="table" checked autocomplete="off">Table</label>&nbsp;
+					<label><input type="radio" name="view" value="li" autocomplete="off">List</label>
+				</td>
+			</tr>
 		</tbody>
 	</table>
 </fieldset>
 {%- include 'parts/sheet_table.njk' -%}
+{%- include 'parts/sheet_list.njk' -%}
 <p id="nomatch" style="display: none;">Nothing found. Sorry!</p>
 {%- if 'production' === app.env -%}
-<script src="{{ '/assets/js/sheets.min.js' | url }}?v=20220809"></script>
+<script src="{{ '/assets/js/sheets.min.js' | url }}?v=20220811"></script>
 {%- else -%}
 <script src="{{ '/assets/js/sheets.js' | url }}"></script>
 {%- endif -%}
