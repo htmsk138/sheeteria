@@ -21,10 +21,10 @@ title: Home
 					Look for:
 				</th>
 				<td>
-					<label><input type="radio" name="filter-style" value="all" checked autocomplete="off">All</label>&nbsp;
-					<label><input type="radio" name="filter-style" value="piano" autocomplete="off">Piano solo</label>&nbsp;
-					<label><input type="radio" name="filter-style" value="easy" autocomplete="off">Easy piano</label>&nbsp;
-					<label><input type="radio" name="filter-style" value="lead" autocomplete="off">Lead sheet</label>
+					<label><input type="radio" name="filter-style" value="all" onchange="updateFilters()" checked autocomplete="off">All</label>&nbsp;
+					<label><input type="radio" name="filter-style" value="piano" onchange="updateFilters()" autocomplete="off">Piano solo</label>&nbsp;
+					<label><input type="radio" name="filter-style" value="easy" onchange="updateFilters()" autocomplete="off">Easy piano</label>&nbsp;
+					<label><input type="radio" name="filter-style" value="lead" onchange="updateFilters()" autocomplete="off">Lead sheet</label>
 				</td>
 			</tr>
 			<tr>
@@ -32,9 +32,9 @@ title: Home
 					Sort by:
 				</th>
 				<td>
-					<label><input type="radio" name="sort" value="pd" checked autocomplete="off">Latest</label>&nbsp;
-					<label><input type="radio" name="sort" value="ttl" autocomplete="off">Title</label>&nbsp;
-					<label><input type="radio" name="sort" value="art" autocomplete="off">Artist</label>
+					<label><input type="radio" name="sort" value="pd" onchange="sortSheets()" checked autocomplete="off">Latest</label>&nbsp;
+					<label><input type="radio" name="sort" value="ttl" onchange="sortSheets()" autocomplete="off">Title</label>&nbsp;
+					<label><input type="radio" name="sort" value="art" onchange="sortSheets()" autocomplete="off">Artist</label>
 				</td>
 			</tr>
 			<tr>
@@ -42,8 +42,8 @@ title: Home
 					View:
 				</th>
 				<td>
-					<label><input type="radio" name="view" value="table" checked autocomplete="off">Table</label>&nbsp;
-					<label><input type="radio" name="view" value="li" autocomplete="off">List</label>
+					<label><input type="radio" name="view" value="table" onchange="switchView()" checked autocomplete="off">Table</label>&nbsp;
+					<label><input type="radio" name="view" value="li" onchange="switchView()" autocomplete="off">List</label>
 				</td>
 			</tr>
 		</tbody>

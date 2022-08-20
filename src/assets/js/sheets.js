@@ -6,33 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Display NEW labels
   displayNew();
-
-  /**
-   * Toggle filter.
-   */
-  document.querySelectorAll('[name^="filter-"]').forEach(function(input) {
-    input.addEventListener('change', function(e) {
-      updateFilters();
-    });
-  });
-
-  /**
-   * Toggle sort.
-   */
-  document.querySelectorAll('[name="sort').forEach(function(input) {
-    input.addEventListener('change', function(e) {
-      sortSheets();
-    });
-  });
-
-  /**
-   * Switch view.
-   */
-  document.querySelectorAll('[name="view').forEach(function(input) {
-    input.addEventListener('change', function(e) {
-      switchView();
-    });
-  });
 });
 
 /**
