@@ -48,7 +48,7 @@ eleventyComputed:
           Key (ends in)
         </th>
         <td>
-          {{ sheet.key }} (original: {{ 'same' if sheet.key === sheet.org_key else sheet.org_key }})
+          {{ sheet.key }}{%- if '' !== sheet.org_key %} (original: {{ 'same' if sheet.key === sheet.org_key else sheet.org_key }}){%- endif -%}
         </td>
       </tr>
       {%- if sheet.published_on -%}
