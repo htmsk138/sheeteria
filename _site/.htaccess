@@ -1,5 +1,9 @@
 ErrorDocument 404 /404.html
 
+Redirect 301 /5b-1	/sheet/005b/01/
+Redirect 301 /5a-1	/sheet/005a/01/
+Redirect 301 /59-1	/sheet/0059/01/
+Redirect 301 /5e-1	/sheet/005e/01/
 Redirect 301 /62-1	/sheet/0062/01/
 Redirect 301 /60-1	/sheet/0060/01/
 Redirect 301 /61-1	/sheet/0061/01/
@@ -241,11 +245,11 @@ Redirect 301 /64-1	/sheet/0064/01/
 Redirect 301 /64-0	/sheet/0064/00/
 Redirect 301 /63-1	/sheet/0063/01/
 Redirect 301 /63-0	/sheet/0063/00/
-Redirect 301 /5e-1	/sheet/005e/01/
 Redirect 301 /5c-1	/sheet/005c/01/
-Redirect 301 /5b-1	/sheet/005b/01/
-Redirect 301 /5a-1	/sheet/005a/01/
-Redirect 301 /59-1	/sheet/0059/01/
+Redirect 301 /5b	/sheet/005b/
+Redirect 301 /5a	/sheet/005a/
+Redirect 301 /59	/sheet/0059/
+Redirect 301 /5e	/sheet/005e/
 Redirect 301 /62	/sheet/0062/
 Redirect 301 /60	/sheet/0060/
 Redirect 301 /61	/sheet/0061/
