@@ -9,31 +9,29 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection('songs', function(collectionApi) {
     var songs = {};
     collectionApi.items[0].data.sheeteria.forEach(function(sheet) {
-      if (sheet.published_on) {
-        if (!songs[sheet.song_id]) {
-          songs[sheet.song_id] = {
-            'id': sheet.song_id,
-            'title': sheet.title,
-            'artist': sheet.artist,
-            'artists': sheet.artists,
-            'filters': '',
-            'published_on': '',
-            'sheetList': {},
-          };
-        }
-
-        // Store sheet object
-        songs[sheet.song_id].sheetList[sheet.id.slice(5, 7)] = sheet;
-
-        // Get filters of every sheet for the song concatenated
-        songs[sheet.song_id].filters =
-          songs[sheet.song_id].filters.concat(' ', sheet.filters).trim();
-
-        // Get the latest publication date
-        songs[sheet.song_id].published_on =
-          songs[sheet.song_id].published_on < sheet.published_on ?
-            sheet.published_on : songs[sheet.song_id].published_on;
+      if (!songs[sheet.song_id]) {
+        songs[sheet.song_id] = {
+          'id': sheet.song_id,
+          'title': sheet.title,
+          'artist': sheet.artist,
+          'artists': sheet.artists,
+          'filters': '',
+          'published_on': '',
+          'sheetList': {},
+        };
       }
+
+      // Store sheet object
+      songs[sheet.song_id].sheetList[sheet.id.slice(5, 7)] = sheet;
+
+      // Get filters of every sheet for the song concatenated
+      songs[sheet.song_id].filters =
+        songs[sheet.song_id].filters.concat(' ', sheet.filters).trim();
+
+      // Get the latest publication date
+      songs[sheet.song_id].published_on =
+        songs[sheet.song_id].published_on < sheet.published_on ?
+          sheet.published_on : songs[sheet.song_id].published_on;
     });
 
     return Object.values(songs);
@@ -45,26 +43,24 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection('artists', function(collectionApi) {
     var artists = {};
     collectionApi.items[0].data.sheeteria.forEach(function(sheet) {
-      if (sheet.published_on) {
-        sheet.artists.forEach(function(artist) {
-          if (!artists[artist.slug]) {
-            artists[artist.slug] = {
-              'name': artist.name,
-              'slug': artist.slug,
-              'songList': {}
-            }
+      sheet.artists.forEach(function(artist) {
+        if (!artists[artist.slug]) {
+          artists[artist.slug] = {
+            'name': artist.name,
+            'slug': artist.slug,
+            'songList': {}
           }
+        }
 
-          // Add song
-          if (!artists[artist.slug].songList[sheet.song_id]) {
-            artists[artist.slug].songList[sheet.song_id] = {
-              'id': sheet.song_id,
-              'title': sheet.title,
-              'sheetList': {}
-            }
+        // Add song
+        if (!artists[artist.slug].songList[sheet.song_id]) {
+          artists[artist.slug].songList[sheet.song_id] = {
+            'id': sheet.song_id,
+            'title': sheet.title,
+            'sheetList': {}
           }
-        });
-      }
+        }
+      });
     });
 
     return Object.values(artists);
