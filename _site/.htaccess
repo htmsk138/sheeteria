@@ -249,6 +249,10 @@ Redirect 301 /4-2	/sheet/0004/02/
 Redirect 301 /4-1	/sheet/0004/01/
 Redirect 301 /3-2	/sheet/0003/02/
 Redirect 301 /3-1	/sheet/0003/01/
+Redirect 301 /7b-1	/sheet/007b/01/
+Redirect 301 /7a-1	/sheet/007a/01/
+Redirect 301 /79-1	/sheet/0079/01/
+Redirect 301 /78-1	/sheet/0078/01/
 Redirect 301 /76-1	/sheet/0076/01/
 Redirect 301 /76-0	/sheet/0076/00/
 Redirect 301 /75-1	/sheet/0075/01/
@@ -367,6 +371,10 @@ Redirect 301 /6	/sheet/0006/
 Redirect 301 /5	/sheet/0005/
 Redirect 301 /4	/sheet/0004/
 Redirect 301 /3	/sheet/0003/
+Redirect 301 /7b	/sheet/007b/
+Redirect 301 /7a	/sheet/007a/
+Redirect 301 /79	/sheet/0079/
+Redirect 301 /78	/sheet/0078/
 Redirect 301 /76	/sheet/0076/
 Redirect 301 /75	/sheet/0075/
 Redirect 301 /72	/sheet/0072/
