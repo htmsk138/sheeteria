@@ -11,7 +11,7 @@
   "author": "Hitomi Seki",
   "license": "NO LICENSE",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.2",
     "cross-env": "^7.0.3",
     "csv-parse": "^4.15.4",
     "del": "^2.2.2",
