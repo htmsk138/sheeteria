@@ -261,6 +261,8 @@ Redirect 301 /4-2	/sheet/0004/02/
 Redirect 301 /4-1	/sheet/0004/01/
 Redirect 301 /3-2	/sheet/0003/02/
 Redirect 301 /3-1	/sheet/0003/01/
+Redirect 301 /79-0	/sheet/0079/00/
+Redirect 301 /78-0	/sheet/0078/00/
 Redirect 301 /75-1	/sheet/0075/01/
 Redirect 301 /7d	/sheet/007d/
 Redirect 301 /72	/sheet/0072/
